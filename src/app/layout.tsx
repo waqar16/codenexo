@@ -47,8 +47,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "CodeNexo",
-              url: "https://codenexo.vercel.app",
-              logo: "https://codenexo.vercel.app/logo.png",
+              url: "https://codenexo.tech",
+              logo: "https://codenexo.tech/logo.png",
               sameAs: [
                 "https://github.com/yourgithub",
                 "https://linkedin.com/company/yourcompany",
@@ -64,10 +64,10 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "CodeNexo",
-              url: "https://codenexo.vercel.app",
+              url: "https://codenexo.tech",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://codenexo.vercel.app/search?q={search_term}",
+                target: "https://codenexo.tech/search?q={search_term}",
                 "query-input": "required name=search_term",
               },
             }),

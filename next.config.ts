@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
         has: [
           {
             type: 'host',
-            value: 'codenexo.vercel.app',
+            value: 'codenexo.tech',
           },
         ],
         destination: 'https://codenexo.tech/:path*',
