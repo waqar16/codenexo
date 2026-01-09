@@ -10,7 +10,7 @@ import type { Metadata } from 'next'
 export function generateMetadata(): Metadata {
   const title = 'Services | CodeNexo';
   const description = 'Explore AI automation, web & app development, custom software, IoT systems, data & analytics, and workflow integrations.';
-  const url = 'https://codenexo.vercel.app/services';
+  const url = 'https://codenexo.tech/services';
   return {
     title,
     description,

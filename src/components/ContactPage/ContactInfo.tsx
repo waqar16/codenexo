@@ -23,10 +23,10 @@ const ContactInfo = () => {
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Email us at</p>
                   <a 
-                    href="mailto:contact@codenexo.com" 
+                    href="mailto:muhammadmubashirbabar@gmail.com" 
                     className="text-lg font-semibold text-white hover:text-yellow-400 transition-colors"
                   >
-                    contact@codenexo.com
+                    muhammadmubashirbabar@gmail.com
                   </a>
                 </div>
               </div>

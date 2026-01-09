@@ -21,10 +21,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
     return {
       title: 'Service Not Found | CodeNexo',
       description: 'The requested service could not be found.',
-      alternates: { canonical: `https://codenexo.vercel.app/services/${params.slug}` },
+      alternates: { canonical: `https://codenexo.tech/services/${params.slug}` },
     }
   }
-  const baseUrl = 'https://codenexo.vercel.app/services/' + service.slug
+  const baseUrl = 'https://codenexo.tech/services/' + service.slug
   return {
     title: `${service.title} | CodeNexo`,
     description: service.short,
@@ -116,7 +116,7 @@ const ServicePage = ({ params }: Props) => {
               provider: {
                 '@type': 'Organization',
                 name: 'CodeNexo',
-                url: 'https://codenexo.vercel.app',
+                url: 'https://codenexo.tech',
               },
             }),
           }}

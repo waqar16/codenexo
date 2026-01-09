@@ -4,7 +4,7 @@ import SplashCursor from "@/components/SplashCursor";
 import { geistMono, geistSans } from "@/fonts/fonts";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://codenexo.vercel.app"),
+  metadataBase: new URL("https://codenexo.tech"),
   title: {
     default: "CodeNexo – AI, Automation & Software Development",
     template: "%s | CodeNexo",
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://codenexo.vercel.app",
+    url: "https://codenexo.tech",
     title: "CodeNexo – AI, Automation & Software Development",
     description:
       "AI-driven automation, high-performance web apps, and custom software solutions.",

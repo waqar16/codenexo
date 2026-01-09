@@ -13,7 +13,7 @@ import Link from "next/link";
 export function generateMetadata(): Metadata {
   const title = "High-Performance AI & Software Solutions";
   const description = "AI automation, Next.js apps, custom software, IoT & data intelligence for scalable growth.";
-  const url = "https://codenexo.vercel.app";
+  const url = "https://codenexo.tech";
   return {
     title,
     description,

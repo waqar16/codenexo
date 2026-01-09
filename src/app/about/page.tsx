@@ -12,7 +12,7 @@ import Link from 'next/link'
 export function generateMetadata(): Metadata {
   const title = 'About CodeNexo – Team & Vision';
   const description = 'Learn about CodeNexo’s engineering culture, product mindset and team delivering AI automation, custom software and scalable systems.';
-  const url = 'https://codenexo.vercel.app/about';
+  const url = 'https://codenexo.tech/about';
   return {
     title,
     description,
