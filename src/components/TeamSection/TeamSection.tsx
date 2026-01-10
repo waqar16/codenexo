@@ -57,7 +57,7 @@ export const teamData = [
     image: "/saim.jpg",
     experience: "3+ Years Experience",
     description:
-      "Full stack engineer building modern, fast and scalable applications using React, Next.js, Node.js and MongoDB — delivering seamless frontend and backend solutions.",
+      "Full stack engineer building modern, fast and scalable applications using React, Next.js, Node.js and MongoDB. Delivering seamless frontend and backend solutions.",
     socials: {
       facebook: "",
       linkedin: "https://linkedin.com/in/saim-shahzad-476bba25b/",
@@ -88,7 +88,7 @@ export const teamData = [
 
 //     </p>
 //     {/* <div className='flex flex-row items-center  w-full justify-center mt-4'>
-         
+
 //          <Image alt='sdsad' loading="lazy" src={data.image} width={128} height={128} className="rounded-full" />
 
 //     </div> */}
@@ -102,8 +102,8 @@ export const teamData = [
 //     </p>
 //   ))}
 // </div>
-   
-    
+
+
 
 // <div className="flex flex-row items-center gap-3 mt-4">
 //   <Link
@@ -153,7 +153,7 @@ export const teamData = [
 
 // //     </p>
 // //     <div className='flex flex-row items-center  w-full justify-center mt-4'>
-         
+
 // //          <img src={data.image} className='w-32 h-auto rounded-full'/>
 // //     </div>
 // //     <div className="flex flex-wrap items-center w-full justify-start mt-4">
@@ -166,8 +166,8 @@ export const teamData = [
 // //     </p>
 // //   ))}
 // // </div>
-   
-    
+
+
 
 // // <div className="flex flex-row items-center gap-3 mt-4">
 // //   <Link
@@ -208,14 +208,14 @@ export const teamData = [
 // // </div>
 // //   </div> 
 //            ))}
-  
+
 //     </div>
 // </div>
 //   )
 // }
-export default function TeamSection( ) {
+export default function TeamSection() {
   return (
-    <div className='flex flex-col items-center w-full p-12'> 
+    <div className='flex flex-col items-center w-full p-12'>
       <h1 className='text-4xl font-bold mb-2'>The People Behind CodeNexo</h1>
       <p className='text-gray-400 text-center mb-8 max-w-2xl'>Meet the talented engineers and problem solvers who bring technical expertise and product thinking to every project.</p>
       <div className="grid grid-cols-3 w-full gap-4 will-change-transform">

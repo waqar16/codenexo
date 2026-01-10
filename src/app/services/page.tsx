@@ -33,7 +33,7 @@ export function generateMetadata(): Metadata {
 
 const ServicesPage = () => {
   return (
-    <div className={`${bitter.className} antialiased`}> 
+    <div className={`${bitter.className} antialiased`}>
       <Navbar />
 
       <section className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-20">
@@ -41,7 +41,7 @@ const ServicesPage = () => {
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold">Services</h1>
             <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
-              Practical engineering, intelligent automation and scalable products — built to grow your business.
+              Practical engineering, intelligent automation and scalable products built to grow your business.
             </p>
           </div>
 
@@ -58,9 +58,9 @@ const ServicesPage = () => {
                 </div>
 
                 <ul className="mt-4 space-y-2 text-sm text-gray-300">
-                  {s.features.slice(0,3).map((f, idx) => (
+                  {s.features.slice(0, 3).map((f, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-yellow-400 text-black font-semibold">{idx+1}</span>
+                      <span className="inline-flex items-center justify-center w-8 h-8 rounded bg-yellow-400 text-black font-semibold">{idx + 1}</span>
                       <span>{f}</span>
                     </li>
                   ))}

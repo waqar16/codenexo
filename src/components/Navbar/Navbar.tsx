@@ -1,7 +1,7 @@
 "use client"
 import HamburgerSvg from '@/constants/svg/Hamburger.svg'
 import Image from 'next/image'
-import React from 'react' 
+import React from 'react'
 import BubbleMenu from '../BubbleMenu';
 import CardNav from '../CardNav';
 import logo from './logo-main.png';
@@ -90,25 +90,25 @@ const socialItems = [
   { label: 'LinkedIn', link: 'https://linkedin.com' }
 ];
 const Navbar = () => {
-  return (  
-  <StaggeredMenu
-  isFixed={true}
-    position="right"
-    items={menuItems}
-    socialItems={socialItems}
-    displaySocials={true}
-    displayItemNumbering={true}
-    menuButtonColor="#fff"
-    openMenuButtonColor="black"
-    changeMenuColorOnOpen={true}
-    colors={['#ffb43bff', '#f39c12']}
-    logoUrl="/path-to-your-logo.svg"
-    accentColor="#f39c12"
-    onMenuOpen={() => console.log('Menu opened')}
-    onMenuClose={() => console.log('Menu closed')}
-  /> 
+  return (
+    <StaggeredMenu
+      isFixed={true}
+      position="right"
+      items={menuItems}
+      socialItems={socialItems}
+      displaySocials={true}
+      displayItemNumbering={true}
+      menuButtonColor="#fff"
+      openMenuButtonColor="black"
+      changeMenuColorOnOpen={true}
+      colors={['#ffb43bff', '#f39c12']}
+      logoUrl="/path-to-your-logo.svg"
+      accentColor="#f39c12"
+      onMenuOpen={() => console.log('Menu opened')}
+      onMenuClose={() => console.log('Menu closed')}
+    />
     // <BubbleMenu
-    //   logo={<span style={{ fontWeight: 700,color:'#f39c12' }}>Codenexo</span>}
+    //   logo={<span style={{ fontWeight: 700,color:'#f39c12' }}>CodeNexo</span>}
     //   items={items}
     //   menuAriaLabel="Toggle navigation"
     //   menuBg="#ffffff"
@@ -128,12 +128,12 @@ const Navbar = () => {
     //   ease="power3.out"
     // />
     // <div className='flex flex-row items-center justify-between w-full  h-[10vh] relative  px-8 py-2'>
-         
+
     // <img 
     //         src="/codenexo-logo.jpg" 
     //         alt="Globe icon"
     //         className='w-16 h-auto'
-            
+
     //       />
 
     //       <HamburgerSvg/>

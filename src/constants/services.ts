@@ -14,7 +14,7 @@ export const SERVICES: Service[] = [
     title: 'AI & Automation Solutions',
     short:
       'Custom AI chatbots, automated workflows, and API integrations that reduce manual work and accelerate operations.',
-    tagline: 'Automate intelligently — faster workflows, happier teams.',
+    tagline: 'Automate intelligently: faster workflows, happier teams.',
     features: [
       'Custom conversational AI and chatbots',
       'Workflow automation (Make, Zapier, GoHighLevel)',
@@ -24,7 +24,7 @@ export const SERVICES: Service[] = [
     problem:
       'Many teams waste time on repetitive tasks, lose context across tools, and miss opportunities to scale because they rely on manual processes.',
     solution:
-      'We design intelligent automation and AI assistants that connect your tools, reduce manual effort, and surface the right information at the right time — freeing your team to focus on high‑value work.'
+      'We design intelligent automation and AI assistants that connect your tools, reduce manual effort, and surface the right information at the right time, freeing your team to focus on high‑value work.'
   },
   {
     slug: 'web-and-app-development',
@@ -47,7 +47,7 @@ export const SERVICES: Service[] = [
     slug: 'custom-software-development',
     title: 'Custom Software Development',
     short:
-      'Tailored business software — CRMs, dashboards, and management systems that map to how you work.',
+      'Tailored business software: CRMs, dashboards, and management systems that map to how you work.',
     tagline: 'Bespoke systems that shape your business, not the other way around.',
     features: [
       'Custom CRMs and dashboards',
@@ -65,7 +65,7 @@ export const SERVICES: Service[] = [
     title: 'Embedded & IoT Systems',
     short:
       'Hardware and firmware solutions, Raspberry Pi prototypes, and sensor integrations for real‑world automation.',
-    tagline: 'From sensors to dashboards — connected devices that work reliably.',
+    tagline: 'From sensors to dashboards: connected devices that work reliably.',
     features: [
       'Raspberry Pi & microcontroller solutions',
       'Sensor integrations and telemetry pipelines',
@@ -73,7 +73,7 @@ export const SERVICES: Service[] = [
       'Hardware prototypes and production support'
     ],
     problem:
-      'Physical systems are hard to prototype and scale — hardware, connectivity and software must all align.',
+      'Physical systems are hard to prototype and scale. Hardware, connectivity and software must all align.',
     solution:
       'We create robust IoT systems with reliable connectivity, real‑time data, and easy user interfaces so devices become dependable business assets.'
   },

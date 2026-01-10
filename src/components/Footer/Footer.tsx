@@ -11,7 +11,7 @@ const Footer = () => {
         📅 Book a Free Call
       </Link>
       <p className="text-sm text-center md:text-left">
-        © {new Date().getFullYear()} <span className="font-semibold">Codenexo</span>. All Rights Reserved.
+        © {new Date().getFullYear()} <span className="font-semibold">CodeNexo</span>. All Rights Reserved.
       </p>
     </div>
 

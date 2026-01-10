@@ -18,7 +18,7 @@ export default function VisionCard() {
       <div className="relative z-10 text-white">
         <h3 className="text-2xl font-semibold mb-2">Our Vision</h3>
         <p className="text-base leading-relaxed">
-          At Codenexo, our vision is to empower businesses and individuals through
+          At CodeNexo, our vision is to empower businesses and individuals through
           cutting-edge digital solutions that inspire innovation, drive growth,
           and shape a smarter future. We strive to be a global leader in technology
           by delivering seamless experiences and creating meaningful impact across industries.
