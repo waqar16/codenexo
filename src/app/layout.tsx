@@ -50,10 +50,7 @@ export default function RootLayout({
               name: "CodeNexo",
               url: "https://codenexo.tech",
               logo: "https://codenexo.tech/logo.png",
-              sameAs: [
-                "https://github.com/yourgithub",
-                "https://linkedin.com/company/yourcompany",
-              ],
+              sameAs: [],
             }),
           }}
         />
