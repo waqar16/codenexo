@@ -1,4 +1,5 @@
-import type { Metadata } from "next"; 
+import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import SplashCursor from "@/components/SplashCursor";
 import { geistMono, geistSans } from "@/fonts/fonts";
@@ -78,8 +79,13 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {/* <SplashCursor/> */}
-        
+
         {children}
+
+        <Script
+          src="https://assets.calendly.com/assets/external/widget.js"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );
