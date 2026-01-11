@@ -55,7 +55,7 @@ Four benefit cards highlighting:
 - Flexible Engagement Models
 
 ### 4. **ContactInfo**
-- Email: muhammadmubashirbabar@gmail.com
+- Email: contact@codenexo.tech
 - Location: Pakistan (working with clients worldwide)
 - Social media links (LinkedIn, GitHub)
 - Business hours: M–F, 9:00 AM – 6:00 PM (PKT)

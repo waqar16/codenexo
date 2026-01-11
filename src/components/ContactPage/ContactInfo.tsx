@@ -6,7 +6,7 @@ const ContactInfo = () => {
     <section className="w-full bg-gradient-to-b from-[#041025] to-[#0b1020] text-white py-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          
+
           {/* Left Side - Direct Contact */}
           <div>
             <h3 className="text-2xl md:text-3xl font-bold mb-6">Prefer Email? Reach Out Directly</h3>
@@ -22,11 +22,11 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Email us at</p>
-                  <a 
-                    href="mailto:muhammadmubashirbabar@gmail.com" 
+                  <a
+                    href="mailto:contact@codenexo.tech"
                     className="text-lg font-semibold text-white hover:text-yellow-400 transition-colors"
                   >
-                    muhammadmubashirbabar@gmail.com
+                    contact@codenexo.tech
                   </a>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const ContactInfo = () => {
           {/* Right Side - Social Links & Additional Info */}
           <div className="bg-white/5 border border-white/10 rounded-xl p-8">
             <h4 className="text-xl font-bold mb-6">Connect With Us</h4>
-            
+
             <div className="space-y-4 mb-8">
               {/* LinkedIn */}
               <a

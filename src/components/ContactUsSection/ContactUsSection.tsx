@@ -77,8 +77,8 @@ const ContactUsSection = () => {
           {/* Email */}
           <div className="flex items-center gap-2">
             <FaEnvelope className="text-xl" />
-            <a href="mailto:muhammadmubashirbabar@gmail.com" className="underline">
-              muhammadmubashirbabar@gmail.com
+            <a href="mailto:contact@codenexo.tech" className="underline">
+              contact@codenexo.tech
             </a>
           </div>
 
