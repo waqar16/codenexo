@@ -108,6 +108,15 @@ const ConsultationForm = () => {
       })
 
       if (response.ok) {
+        if (typeof window !== "undefined") {
+          const w = window as any
+          w.dataLayer = w.dataLayer || []
+          w.dataLayer.push({
+            event: 'lead_submitted',
+            form_name: 'real_estate_leads'
+          })
+        }
+
         setSubmitStatus('success')
         // Reset form
         setFormData({
