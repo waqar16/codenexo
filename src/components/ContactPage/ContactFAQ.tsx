@@ -42,8 +42,8 @@ const ContactFAQ = () => {
     <section className="w-full bg-gradient-to-b from-[#0b1020] to-[#041025] text-white py-16">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Frequently Asked Questions</h2>
-          <p className="mt-4 text-gray-300">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Frequently Asked Questions</h2>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300">
             Quick answers to common questions about working with CodeNexo
           </p>
         </div>

@@ -55,7 +55,7 @@ const Landing = () => {
               />
             </div>
             <FadeContent blur={true} duration={1000} className="mt-4" easing="ease-out" initialOpacity={0}>
-              <p className="mt-4 max-w-xl text-base sm:text-lg text-gray-300 text-start">
+              <p className="mt-4 max-w-xl text-base sm:text-lg leading-relaxed text-gray-300 text-start">
                 At CodeNexo, we craft powerful digital solutions: from modern web development and AI integration to advanced web scraping and automation.
               </p>
             </FadeContent>

@@ -4,7 +4,7 @@ import MagicBento from '../MagicBento'
 const ServicesSection = () => {
   return ( 
 <div className='flex flex-col items-center w-full mt-8'>
-  <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl'>Services</h1>
+  <h1 className='font-bold text-2xl sm:text-3xl md:text-4xl leading-tight'>Services</h1>
   <MagicBento
   textAutoHide={true}
   enableStars={true}

@@ -216,9 +216,9 @@ export const teamData = [
 export default function TeamSection() {
   return (
     <div className='flex flex-col items-center w-full p-12'>
-      <h1 className='text-4xl font-bold mb-2'>The People Behind CodeNexo</h1>
-      <p className='text-gray-400 text-center mb-8 max-w-2xl'>Meet the talented engineers and problem solvers who bring technical expertise and product thinking to every project.</p>
-      <div className="grid grid-cols-3 w-full gap-4 will-change-transform">
+      <h1 className='text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-2'>The People Behind CodeNexo</h1>
+      <p className='text-base sm:text-lg leading-relaxed text-gray-400 text-center mb-8 max-w-xl'>Meet the talented engineers and problem solvers who bring technical expertise and product thinking to every project.</p>
+      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 w-full will-change-transform">
         {teamData.map((data, index) => (
           <TeamCard key={index} data={data} />
         ))}

@@ -70,7 +70,7 @@ const ServicePage = ({ params }: Props) => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="flex-1">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">{service.title}</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">{service.title}</h1>
               <p className="mt-4 text-gray-300 max-w-2xl">{service.tagline}</p>
               <div className="mt-6 flex items-center gap-4">
                 <Link href="/contact">

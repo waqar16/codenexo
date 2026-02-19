@@ -51,8 +51,8 @@ const ContactUsSection = () => {
   }
 
   return (
-    <div className='p-12 flex flex-row items-center justify-between'>
-      <section className="w-5/12   text-white">
+    <div className='p-6 md:p-12 grid gap-6 md:grid-cols-2 items-start'>
+      <section className="w-full text-white">
         {/* Heading */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           have a<br />question?
@@ -72,7 +72,7 @@ const ContactUsSection = () => {
         </p>
 
         {/* Contact Actions */}
-        <div className="mt-4 space-y-5 text-md">
+        <div className="mt-4 space-y-5 text-base">
 
           {/* Email */}
           <div className="flex items-center gap-2">
@@ -107,8 +107,8 @@ const ContactUsSection = () => {
           </div>
         </div>
       </section>
-      <div className='w-5/12'>
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto w-full mt-10 space-y-6">
+      <div className='w-full'>
+        <form onSubmit={handleSubmit} className="w-full mt-10 space-y-6" suppressHydrationWarning data-lpignore="true">
           {status === 'success' && (
             <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3 text-center text-sm">Thank you! We'll respond within 24 hours.</div>
           )}
@@ -117,41 +117,42 @@ const ContactUsSection = () => {
           )}
 
           {/* First + Last Name (Row) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="flex flex-col space-y-2" suppressHydrationWarning>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="flex flex-col space-y-2">
               <Label className="text-sm font-medium">First Name</Label>
-              <Input placeholder="John" value={firstName} onChange={e => setFirstName(e.target.value)} />
+              <Input className="w-full" placeholder="John" value={firstName} onChange={e => setFirstName(e.target.value)} autoComplete="off" data-lpignore="true" />
             </div>
 
-            <div className="flex flex-col space-y-2" suppressHydrationWarning>
+            <div className="flex flex-col space-y-2">
               <Label className="text-sm font-medium">Last Name</Label>
-              <Input placeholder="Doe" value={lastName} onChange={e => setLastName(e.target.value)} />
+              <Input className="w-full" placeholder="Doe" value={lastName} onChange={e => setLastName(e.target.value)} autoComplete="off" data-lpignore="true" />
             </div>
           </div>
 
           {/* Email */}
-          <div className="flex flex-col space-y-2" suppressHydrationWarning>
+          <div className="flex flex-col space-y-2">
             <Label className="text-sm font-medium">Email</Label>
-            <Input type="email" placeholder="" value={email} onChange={e => setEmail(e.target.value)} />
+            <Input className="w-full" type="email" placeholder="" value={email} onChange={e => setEmail(e.target.value)} autoComplete="off" data-lpignore="true" />
           </div>
-          <div className="flex flex-col space-y-2" suppressHydrationWarning>
+          <div className="flex flex-col space-y-2">
             <Label>Phone / WhatsApp</Label>
-            <Input type="tel" placeholder="+92 322 626 4566" value={phone} onChange={e => setPhone(e.target.value)} />
+            <Input className="w-full" type="tel" placeholder="+92 322 626 4566" value={phone} onChange={e => setPhone(e.target.value)} autoComplete="off" data-lpignore="true" />
           </div>
           {/* Query */}
-          <div className="flex flex-col space-y-2" suppressHydrationWarning>
+          <div className="flex flex-col space-y-2">
             <Label className="text-sm font-medium">Your Query</Label>
             <Textarea
               placeholder="Write your message here..."
-              className="resize-none"
+              className="w-full resize-none"
               rows={6}
               value={query}
               onChange={e => setQuery(e.target.value)}
+              data-lpignore="true"
             />
           </div>
 
           {/* Submit Button */}
-          <Button type="submit" variant={"custom1"} className="w-full" disabled={isSubmitting}>
+          <Button type="submit" variant={"custom1"} className="w-full sm:w-auto" disabled={isSubmitting}>
             {isSubmitting ? 'Submitting...' : 'Submit'}
           </Button>
         </form>

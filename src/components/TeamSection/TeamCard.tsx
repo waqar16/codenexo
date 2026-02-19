@@ -23,7 +23,7 @@ interface TeamCardProps {
 
 const TeamCard = React.memo(({ data }: TeamCardProps) => {
   return (
-    <div className="border border-[#f39c12] rounded-2xl p-5 transition-all hover:border-yellow-300 hover:shadow-lg hover:shadow-yellow-300/10">
+    <div className="w-full h-full border border-[#f39c12] rounded-2xl p-5 transition-all hover:border-yellow-300 hover:shadow-lg hover:shadow-yellow-300/10">
       <div className="flex flex-col items-start w-full">
 
         <p className="w-auto text-white text-xs bg-[#B2BEB5]/10 p-2 px-6 rounded-full">

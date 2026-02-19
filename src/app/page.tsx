@@ -1,6 +1,5 @@
  
 import AboutUsSection from "@/components/AboutUsSection/AboutUsSection";
-import ContactUsSection from "@/components/ContactUsSection/ContactUsSection";
 import Footer from "@/components/Footer/Footer";
 import Landing from "@/components/Landing/Landing";
 import Navbar from "@/components/Navbar/Navbar";
@@ -10,6 +9,7 @@ import { bitter } from "@/fonts/fonts";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
+import HomeContactUsSection from "@/components/ContactUsSection/HomeContactUsSection";
 
 export function generateMetadata(): Metadata {
   const title = "High-Performance AI & Software Solutions";
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
       <section className="py-16">
         <Container>
-          <ContactUsSection/>
+          <HomeContactUsSection/>
         </Container>
       </section>
       <section className="py-16">

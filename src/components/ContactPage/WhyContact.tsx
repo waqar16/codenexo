@@ -29,8 +29,8 @@ const WhyContact = () => {
     <section className="w-full bg-[#0b1020] text-white py-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Why Reach Out to CodeNexo?</h2>
-          <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Why Reach Out to CodeNexo?</h2>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300 max-w-xl mx-auto">
             We're not just another development agency. Here's what sets us apart.
           </p>
         </div>

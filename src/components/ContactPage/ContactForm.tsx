@@ -137,8 +137,8 @@ const ContactForm = () => {
     <section id="contact-form" className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Start Your Project</h2>
-          <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Start Your Project</h2>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300 max-w-xl mx-auto">
             Fill out the form below and we'll get back to you with a detailed proposal tailored to your needs.
           </p>
         </div>

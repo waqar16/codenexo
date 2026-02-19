@@ -40,15 +40,15 @@ const ServicesPage = () => {
       <section className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-20">
         <Container>
           <div className="text-center mb-12">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">Services</h1>
-            <p className="mt-4 text-gray-300">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight">Services</h1>
+            <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300">
               Practical engineering, intelligent automation and scalable products built to grow your business.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SERVICES.map((s) => (
-              <article key={s.slug} className="group bg-white/5 hover:bg-white/7 border border-white/5 p-6 rounded-xl transition-shadow shadow-sm">
+              <article key={s.slug} className="group w-full h-full bg-white/5 hover:bg-white/7 border border-white/5 p-6 rounded-xl transition-shadow shadow-sm">
                 <div className="flex items-start justify-between">
                   <div>
                     <h3 className="text-lg font-bold text-white">
@@ -82,8 +82,8 @@ const ServicesPage = () => {
       <section className="py-16">
         <Container>
           <div className="bg-gradient-to-r from-[#0f1724] to-[#071127] p-8 rounded-xl text-white">
-            <h3 className="text-2xl font-bold">Ready to build?</h3>
-            <p className="mt-2 text-gray-300">Tell us about your project and we'll match the right team and solution.</p>
+            <h3 className="text-2xl font-bold leading-tight">Ready to build?</h3>
+            <p className="mt-2 text-base sm:text-lg leading-relaxed text-gray-300">Tell us about your project and we'll match the right team and solution.</p>
             <div className="mt-4">
               <Link href="/contact">
                 <Button variant="custom1">Let's Build Together</Button>

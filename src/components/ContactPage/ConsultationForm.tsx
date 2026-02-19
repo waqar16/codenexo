@@ -165,8 +165,8 @@ const ConsultationForm = () => {
     <section id="contact-form" className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Book a Free Consultation Call</h2>
-          <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Book a Free Consultation Call</h2>
+          <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300 max-w-xl mx-auto">
             Fill out the form below with your project details. We'll review your requirements and get back to you within 24 hours.
           </p>
         </div>
@@ -194,7 +194,7 @@ const ConsultationForm = () => {
               )}
 
               {/* Two Column Grid for Desktop */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid gap-6 md:grid-cols-2">
                 {/* Full Name */}
                 <div className="flex flex-col space-y-2">
                   <Label className="text-sm font-medium text-gray-200">
@@ -205,7 +205,7 @@ const ConsultationForm = () => {
                       placeholder="Enter Full Name"
                       value={formData.fullName}
                       onChange={(e) => handleChange('fullName', e.target.value)}
-                      className={`pl-10 ${errors.fullName ? 'border-red-500' : ''}`}
+                      className={`w-full pl-10 ${errors.fullName ? 'border-red-500' : ''}`}
                       aria-invalid={!!errors.fullName}
                     />
                     <svg
@@ -233,7 +233,7 @@ const ConsultationForm = () => {
                       placeholder=""
                       value={formData.email}
                       onChange={(e) => handleChange('email', e.target.value)}
-                      className={`pl-10 ${errors.email ? 'border-red-500' : ''}`}
+                      className={`w-full pl-10 ${errors.email ? 'border-red-500' : ''}`}
                       aria-invalid={!!errors.email}
                     />
                     <svg
@@ -260,7 +260,7 @@ const ConsultationForm = () => {
                       placeholder=""
                       value={formData.companyName}
                       onChange={(e) => handleChange('companyName', e.target.value)}
-                      className="pl-10"
+                      className="w-full pl-10"
                     />
                     <svg
                       className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
@@ -284,7 +284,7 @@ const ConsultationForm = () => {
                       placeholder=""
                       value={formData.contactNo}
                       onChange={(e) => handleChange('contactNo', e.target.value)}
-                      className={`pl-10 ${errors.contactNo ? 'border-red-500' : ''}`}
+                      className={`w-full pl-10 ${errors.contactNo ? 'border-red-500' : ''}`}
                       aria-invalid={!!errors.contactNo}
                     />
                     <svg
@@ -312,7 +312,7 @@ const ConsultationForm = () => {
                       placeholder=""
                       value={formData.whatsApp}
                       onChange={(e) => handleChange('whatsApp', e.target.value)}
-                      className="pl-10"
+                      className="w-full pl-10"
                     />
                     <svg
                       className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
@@ -334,7 +334,7 @@ const ConsultationForm = () => {
                       placeholder=""
                       value={formData.location}
                       onChange={(e) => handleChange('location', e.target.value)}
-                      className="pl-10"
+                      className="w-full pl-10"
                     />
                     <svg
                       className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400"
@@ -384,7 +384,7 @@ const ConsultationForm = () => {
                 </Label>
                 <Textarea
                   placeholder=""
-                  className={`resize-none min-h-[140px] ${errors.message ? 'border-red-500' : ''}`}
+                  className={`w-full resize-none min-h-[140px] ${errors.message ? 'border-red-500' : ''}`}
                   value={formData.message}
                   onChange={(e) => handleChange('message', e.target.value)}
                   aria-invalid={!!errors.message}
@@ -432,7 +432,7 @@ const ConsultationForm = () => {
                 type="submit"
                 variant="custom1"
                 size="lg"
-                className="w-full text-base font-semibold mt-4"
+                className="w-full sm:w-auto text-base font-semibold mt-4"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? 'Submitting...' : 'Submit'}

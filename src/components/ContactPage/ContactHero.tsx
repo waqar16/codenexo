@@ -21,7 +21,7 @@ const ContactHero = () => {
 
       {/* Text Content */}
       <div className="relative z-10 max-w-4xl px-6">
-        <h1 className="text-white font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
+        <h1 className="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight">
           Let's Build Something Exceptional Together
         </h1>
         <p className="text-gray-200 mt-6 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
