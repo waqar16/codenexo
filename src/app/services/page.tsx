@@ -6,6 +6,7 @@ import Link from 'next/link'
 import { SERVICES } from '@/constants/services'
 import { Button } from '@/components/ui/button'
 import type { Metadata } from 'next'
+import Container from '@/components/layout/Container'
 
 export function generateMetadata(): Metadata {
   const title = 'Services | CodeNexo';
@@ -37,10 +38,10 @@ const ServicesPage = () => {
       <Navbar />
 
       <section className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-20">
-        <div className="max-w-6xl mx-auto px-6">
+        <Container>
           <div className="text-center mb-12">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">Services</h1>
-            <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
+            <p className="mt-4 text-gray-300">
               Practical engineering, intelligent automation and scalable products built to grow your business.
             </p>
           </div>
@@ -75,11 +76,11 @@ const ServicesPage = () => {
               </article>
             ))}
           </div>
-        </div>
+        </Container>
       </section>
 
-      <section className="py-12">
-        <div className="max-w-6xl mx-auto px-6">
+      <section className="py-16">
+        <Container>
           <div className="bg-gradient-to-r from-[#0f1724] to-[#071127] p-8 rounded-xl text-white">
             <h3 className="text-2xl font-bold">Ready to build?</h3>
             <p className="mt-2 text-gray-300">Tell us about your project and we'll match the right team and solution.</p>
@@ -89,7 +90,7 @@ const ServicesPage = () => {
               </Link>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
 
       <Footer />

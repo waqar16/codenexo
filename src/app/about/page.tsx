@@ -8,6 +8,7 @@ import { bitter } from '@/fonts/fonts'
 import React from 'react'
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import Container from '@/components/layout/Container'
 
 export function generateMetadata(): Metadata {
   const title = 'About CodeNexo – Team & Vision';
@@ -25,17 +26,37 @@ export function generateMetadata(): Metadata {
 const page = () => {
   return (
     <div className={`${bitter.className}`}>
-       <Navbar/>
-        <Landing/>
-        <History/>
-        <WhyUs/>
-        <TeamSection/>
-        <nav aria-label="Internal links" className="sr-only">
-          <Link href="/services">Our Services</Link>
-          <Link href="/contact">Contact</Link>
-        </nav>
-        <Footer/>
-        </div>
+      <Navbar/>
+      <section className="py-16">
+        <Container>
+          <Landing/>
+        </Container>
+      </section>
+      <section className="py-16">
+        <Container>
+          <History/>
+        </Container>
+      </section>
+      <section className="py-16">
+        <Container>
+          <WhyUs/>
+        </Container>
+      </section>
+      <section className="py-16">
+        <Container>
+          <TeamSection/>
+        </Container>
+      </section>
+      <section className="py-16">
+        <Container>
+          <nav aria-label="Internal links" className="sr-only">
+            <Link href="/services">Our Services</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
+        </Container>
+      </section>
+      <Footer/>
+    </div>
   )
 }
 
