@@ -3,7 +3,7 @@ import React from 'react'
 const History = () => {
   return (
     <div className='w-full flex flex-row items-start justify-between p-24'>
-      <h1 className="w-4/12 text-5xl font-bold leading-tight">
+      <h1 className="w-full max-w-xl text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
         Our Story & <br />Founder's Vision
       </h1>
       <div className='w-6/12  flex flex-col items-start'>

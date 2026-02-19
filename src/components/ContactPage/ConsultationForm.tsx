@@ -165,7 +165,7 @@ const ConsultationForm = () => {
     <section id="contact-form" className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold">Book a Free Consultation Call</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Book a Free Consultation Call</h2>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
             Fill out the form below with your project details. We'll review your requirements and get back to you within 24 hours.
           </p>
@@ -230,7 +230,7 @@ const ConsultationForm = () => {
                   <div className="relative">
                     <Input
                       type="email"
-                      placeholder="Enter Email"
+                      placeholder=""
                       value={formData.email}
                       onChange={(e) => handleChange('email', e.target.value)}
                       className={`pl-10 ${errors.email ? 'border-red-500' : ''}`}
@@ -257,7 +257,7 @@ const ConsultationForm = () => {
                   </Label>
                   <div className="relative">
                     <Input
-                      placeholder="Enter Company Name"
+                      placeholder=""
                       value={formData.companyName}
                       onChange={(e) => handleChange('companyName', e.target.value)}
                       className="pl-10"
@@ -281,7 +281,7 @@ const ConsultationForm = () => {
                   <div className="relative">
                     <Input
                       type="tel"
-                      placeholder="Enter Contact No"
+                      placeholder=""
                       value={formData.contactNo}
                       onChange={(e) => handleChange('contactNo', e.target.value)}
                       className={`pl-10 ${errors.contactNo ? 'border-red-500' : ''}`}
@@ -309,7 +309,7 @@ const ConsultationForm = () => {
                   <div className="relative">
                     <Input
                       type="tel"
-                      placeholder="Enter WhatsApp No"
+                      placeholder=""
                       value={formData.whatsApp}
                       onChange={(e) => handleChange('whatsApp', e.target.value)}
                       className="pl-10"
@@ -331,7 +331,7 @@ const ConsultationForm = () => {
                   </Label>
                   <div className="relative">
                     <Input
-                      placeholder="Location"
+                      placeholder=""
                       value={formData.location}
                       onChange={(e) => handleChange('location', e.target.value)}
                       className="pl-10"
@@ -351,7 +351,7 @@ const ConsultationForm = () => {
 
               {/* Project Budget Slider - Full Width */}
               <div className="flex flex-col space-y-3">
-                <div className="flex justify-between items-center">
+                <div className="flex flex-col sm:flex-row sm:justify-between items-center">
                   <Label className="text-sm font-medium text-gray-200">
                     Project Budget
                   </Label>
@@ -371,7 +371,7 @@ const ConsultationForm = () => {
                     background: `linear-gradient(to right, #f39c12 0%, #f39c12 ${((formData.budget - 1000) / 49000) * 100}%, #374151 ${((formData.budget - 1000) / 49000) * 100}%, #374151 100%)`
                   }}
                 />
-                <div className="flex justify-between text-xs text-gray-400">
+                <div className="flex flex-col sm:flex-row sm:justify-between text-xs text-gray-400">
                   <span>$1,000</span>
                   <span>$50,000</span>
                 </div>
@@ -383,7 +383,7 @@ const ConsultationForm = () => {
                   Message <span className="text-red-400">*</span>
                 </Label>
                 <Textarea
-                  placeholder={`Please provide us with your project brief before the meeting, so we can prepare and align the relevant team.\nIf you have a PDF document of your brief, we highly recommend uploading it using the field below.`}
+                  placeholder=""
                   className={`resize-none min-h-[140px] ${errors.message ? 'border-red-500' : ''}`}
                   value={formData.message}
                   onChange={(e) => handleChange('message', e.target.value)}

@@ -39,7 +39,7 @@ const ServicesPage = () => {
       <section className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-extrabold">Services</h1>
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">Services</h1>
             <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
               Practical engineering, intelligent automation and scalable products built to grow your business.
             </p>

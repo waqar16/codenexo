@@ -44,8 +44,8 @@ const ContactPage = () => {
       <ConsultationForm />
       <section id="schedule-call" className="max-w-5xl mx-auto px-4 py-16">
         <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Schedule a Free Consultation</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold mb-4">Schedule a Free Consultation</h2>
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400">
             Book a 30-minute call to discuss your project requirements
           </p>
         </div>

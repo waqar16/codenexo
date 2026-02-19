@@ -349,10 +349,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
   return (
     <div
-  className={`sm-scope z-40 ${
-    isFixed ? "fixed top-0 left-0 w-screen h-screen" : "w-full h-full"
-  } ${open ? "pointer-events-auto" : "pointer-events-none"}`}
->
+      className={`sm-scope z-40 ${isFixed ? "fixed top-0 left-0 w-screen h-screen" : "w-full h-full"
+        } ${open ? "pointer-events-auto" : "pointer-events-none"}`}
+    >
 
       <div
         className={(className ? className + ' ' : '') + 'staggered-menu-wrapper relative w-full h-full z-40'}
@@ -387,19 +386,21 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           aria-label="Main navigation header"
         >
           <div className="sm-logo flex items-center select-none pointer-events-auto" aria-label="Logo">
-            <Image
-              src={'/logo-Icon.png'}
-              alt="CodeNexo Logo"
-              className="sm-logo-img block h-8 w-auto object-contain"
-              draggable={false}
-              width={110}
-              height={24}
-              priority
-            />
+            <Link href="/" className="block">
+              <Image
+                src={'/logo-Icon.png'}
+                alt="CodeNexo Logo"
+                className="sm-logo-img block h-8 w-auto object-contain"
+                draggable={false}
+                width={110}
+                height={24}
+                priority
+              />
+            </Link>
           </div>
 
           <button
-          
+
             ref={toggleBtnRef}
             className={`sm-toggle relative inline-flex items-center gap-[0.3rem] bg-transparent border-0 cursor-pointer font-medium leading-none overflow-visible pointer-events-auto `}
             aria-label={open ? 'Close menu' : 'Open menu'}
@@ -462,7 +463,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                       data-index={idx + 1}
                     >
                       <span className="sm-panel-itemLabel inline-block [transform-origin:50%_100%] will-change-transform">
-                        {it.label} 
+                        {it.label}
                       </span>
                     </Link>
                   </li>

@@ -54,7 +54,7 @@ const ContactUsSection = () => {
     <div className='p-12 flex flex-row items-center justify-between'>
       <section className="w-5/12   text-white">
         {/* Heading */}
-        <h1 className="text-5xl font-bold leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           have a<br />question?
         </h1>
 
@@ -132,7 +132,7 @@ const ContactUsSection = () => {
           {/* Email */}
           <div className="flex flex-col space-y-2" suppressHydrationWarning>
             <Label className="text-sm font-medium">Email</Label>
-            <Input type="email" placeholder="john@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+            <Input type="email" placeholder="" value={email} onChange={e => setEmail(e.target.value)} />
           </div>
           <div className="flex flex-col space-y-2" suppressHydrationWarning>
             <Label>Phone / WhatsApp</Label>

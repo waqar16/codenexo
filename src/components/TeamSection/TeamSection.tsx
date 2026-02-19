@@ -125,7 +125,7 @@ export const teamData = [
 //   </Link>
 
 //   <Link
-//     href="https://github.com/yourprofile"
+// ...existing code...
 //     target="_blank"
 //     rel="noopener noreferrer"
 //     className="p-2 bg-[#B2BEB5]/10 hover:bg-[#B2BEB5]/20 rounded-full border border-gray-700 transition"
@@ -189,7 +189,7 @@ export const teamData = [
 // //   </Link>
 
 // //   <Link
-// //     href="https://github.com/yourprofile"
+// ...existing code...
 // //     target="_blank"
 // //     rel="noopener noreferrer"
 // //     className="p-2 bg-[#B2BEB5]/10 hover:bg-[#B2BEB5]/20 rounded-full border border-gray-700 transition"

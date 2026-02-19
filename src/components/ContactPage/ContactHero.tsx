@@ -13,7 +13,7 @@ const ContactHero = () => {
 
   return (
     <section
-      className="relative w-full h-[400px] md:h-[85vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
+      className="relative w-full h-[280px] sm:h-[400px] md:h-[85vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
       style={{ backgroundImage: "url('/contact-bg.jpg')" }}
     >
       {/* Dark Overlay */}
@@ -21,7 +21,7 @@ const ContactHero = () => {
 
       {/* Text Content */}
       <div className="relative z-10 max-w-4xl px-6">
-        <h1 className="text-white font-extrabold text-4xl md:text-6xl">
+        <h1 className="text-white font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
           Let's Build Something Exceptional Together
         </h1>
         <p className="text-gray-200 mt-6 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">

@@ -70,7 +70,7 @@ const ServicePage = ({ params }: Props) => {
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col lg:flex-row gap-8 items-center">
             <div className="flex-1">
-              <h1 className="text-4xl md:text-5xl font-extrabold">{service.title}</h1>
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold">{service.title}</h1>
               <p className="mt-4 text-gray-300 max-w-2xl">{service.tagline}</p>
               <div className="mt-6 flex items-center gap-4">
                 <Link href="/contact">
@@ -121,7 +121,7 @@ const ServicePage = ({ params }: Props) => {
             }),
           }}
         />
-        <section className="grid lg:grid-cols-3 gap-8">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="lg:col-span-2">
             <h2 className="text-2xl font-bold">Problem & Solution</h2>
             <div className="mt-4 space-y-4 text-gray-700">
@@ -130,7 +130,7 @@ const ServicePage = ({ params }: Props) => {
             </div>
 
             <h3 className="mt-8 text-xl font-semibold">Features & Capabilities</h3>
-            <ul className="mt-4 grid sm:grid-cols-2 gap-3">
+            <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
               {service.features.map((f, i) => (
                 <li key={i} className="p-4 bg-white/5 rounded-md">
                   <div className="font-medium text-white">{f}</div>

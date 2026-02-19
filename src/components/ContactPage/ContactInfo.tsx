@@ -9,7 +9,7 @@ const ContactInfo = () => {
 
           {/* Left Side - Direct Contact */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-6">Prefer Email? Reach Out Directly</h3>
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">Prefer Email? Reach Out Directly</h3>
             <p className="text-gray-300 mb-8">
               We're here to answer any questions you have. Feel free to reach out through any of these channels.
             </p>
@@ -24,7 +24,7 @@ const ContactInfo = () => {
                   <p className="text-sm text-gray-400 mb-1">Email us at</p>
                   <a
                     href="mailto:contact@codenexo.tech"
-                    className="text-lg font-semibold text-white hover:text-yellow-400 transition-colors"
+                    className="text-base sm:text-lg font-semibold text-white hover:text-yellow-400 transition-colors"
                   >
                     contact@codenexo.tech
                   </a>
@@ -38,7 +38,7 @@ const ContactInfo = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Based in</p>
-                  <p className="text-lg font-semibold text-white">
+                  <p className="text-base sm:text-lg font-semibold text-white">
                     Pakistan
                   </p>
                   <p className="text-sm text-gray-300 mt-1">

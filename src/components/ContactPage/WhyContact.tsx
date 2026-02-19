@@ -4,22 +4,22 @@ import { FaRocket, FaCode, FaComments, FaCogs } from 'react-icons/fa'
 const WhyContact = () => {
   const benefits = [
     {
-      icon: <FaCode className="text-3xl" />,
+      icon: <FaCode className="text-xl sm:text-2xl md:text-3xl" />,
       title: "Technical Depth Across Stack",
       description: "Expertise in AI, automation, full-stack development, embedded systems, and cloud infrastructure."
     },
     {
-      icon: <FaRocket className="text-3xl" />,
+      icon: <FaRocket className="text-xl sm:text-2xl md:text-3xl" />,
       title: "Real Production Experience",
       description: "We build systems that handle real traffic and scale. Not just demos or proof-of-concepts."
     },
     {
-      icon: <FaComments className="text-3xl" />,
+      icon: <FaComments className="text-xl sm:text-2xl md:text-3xl" />,
       title: "Transparent Communication",
       description: "From discovery to delivery, we keep you informed with clear updates and honest timelines."
     },
     {
-      icon: <FaCogs className="text-3xl" />,
+      icon: <FaCogs className="text-xl sm:text-2xl md:text-3xl" />,
       title: "Flexible Engagement Models",
       description: "Whether you need a full team, project-based delivery, or ongoing support, we adapt to your needs."
     }
@@ -29,7 +29,7 @@ const WhyContact = () => {
     <section className="w-full bg-[#0b1020] text-white py-16">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold">Why Reach Out to CodeNexo?</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold">Why Reach Out to CodeNexo?</h2>
           <p className="mt-4 text-gray-300 max-w-2xl mx-auto">
             We're not just another development agency. Here's what sets us apart.
           </p>
