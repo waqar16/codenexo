@@ -97,10 +97,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         {children}
 
         <Script
-          src="https://assets.calendly.com/assets/external/widget.js"
-          strategy="lazyOnload"
-        />
-        <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-60Q27HKQQ4"
           strategy="afterInteractive"
         />
