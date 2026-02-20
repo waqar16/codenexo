@@ -51,16 +51,16 @@ const ContactPage = () => {
           <ConsultationForm />
         </Container>
       </section>
-      <section id="schedule-call" className="py-16">
-        <Container>
-          <div className="text-center mb-8">
-            <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold leading-tight mb-4">Schedule a Free Consultation</h2>
-            <p className="text-base sm:text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-              Book a 30-minute call to discuss your project requirements
-            </p>
-          </div>
+      <section id="schedule-call" className="py-20 px-4">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
+            Schedule a Free Consultation
+          </h2>
+          <p className="text-gray-400 mb-12">
+            Book a 30-minute call to discuss your project requirements
+          </p>
           <CalendlyInline />
-        </Container>
+        </div>
       </section>
       <section className="py-16">
         <Container>

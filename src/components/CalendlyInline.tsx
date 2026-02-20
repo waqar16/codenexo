@@ -56,7 +56,13 @@ export default function CalendlyInline() {
         strategy="afterInteractive"
         onLoad={initializeWidget}
       />
-      <div id="calendly-container" className="w-full min-h-[700px]" />
+      <div className="w-full flex justify-center">
+        <div
+          id="calendly-container"
+          className="w-full max-w-5xl"
+          style={{ minHeight: "950px" }}
+        />
+      </div>
     </>
   );
 }
