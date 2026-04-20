@@ -8,6 +8,20 @@ import { Button } from '@/components/ui/button'
 import type { Metadata } from 'next'
 import Container from '@/components/layout/Container'
 
+const REAL_ESTATE_SERVICE_CARD = {
+  slug: 'real-estate-leads-automation',
+  title: 'Real Estate Leads & Automation',
+  short:
+    'Fresh off-market lead data, probate and foreclosure records, CRM automation, and follow-up systems for real estate teams.',
+  features: [
+    'Probate and foreclosure lead data',
+    'County record scraping pipelines',
+    'CRM and follow-up automation'
+  ]
+}
+
+const SERVICE_CARDS = [...SERVICES, REAL_ESTATE_SERVICE_CARD]
+
 export function generateMetadata(): Metadata {
   const title = 'Services | CodeNexo';
   const description = 'Explore AI automation, web & app development, custom software, IoT systems, data & analytics, and workflow integrations.';
@@ -47,7 +61,7 @@ const ServicesPage = () => {
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {SERVICES.map((s) => (
+            {SERVICE_CARDS.map((s) => (
               <article key={s.slug} className="group w-full h-full bg-white/5 hover:bg-white/7 border border-white/5 p-6 rounded-xl transition-shadow shadow-sm">
                 <div className="flex items-start justify-between">
                   <div>
@@ -83,10 +97,10 @@ const ServicesPage = () => {
         <Container>
           <div className="bg-gradient-to-r from-[#0f1724] to-[#071127] p-8 rounded-xl text-white">
             <h3 className="text-2xl font-bold leading-tight">Ready to build?</h3>
-            <p className="mt-2 text-base sm:text-lg leading-relaxed text-gray-300">Tell us about your project and we'll match the right team and solution.</p>
+            <p className="mt-2 text-base sm:text-lg leading-relaxed text-gray-300">Tell us about your project and we&apos;ll match the right team and solution.</p>
             <div className="mt-4">
               <Link href="/contact">
-                <Button variant="custom1">Let's Build Together</Button>
+                <Button variant="custom1">Let&apos;s Build Together</Button>
               </Link>
             </div>
           </div>
