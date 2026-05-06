@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import { bitter } from '@/fonts/fonts'
-import BlurText from '../BlurText'
 
 const aboutCards = [
   {
@@ -9,7 +8,7 @@ const aboutCards = [
     body:
       "At CodeNexo, our vision is to empower businesses through cutting-edge digital solutions that drive innovation and real results. We combine AI, automation, and full-stack engineering to deliver systems that are scalable, reliable, and built to last.",
     tone:
-      "row-span-2 border-[#f39c12]/30 bg-[linear-gradient(180deg,rgba(243,156,18,0.18),rgba(255,255,255,0.03))] text-white",
+      "border-[#f39c12]/30 bg-[linear-gradient(180deg,rgba(243,156,18,0.18),rgba(255,255,255,0.03))] text-white",
     label: "North Star",
   },
   {
@@ -43,30 +42,28 @@ const AboutUsSection = () => {
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.24em] text-[#f39c12]">
             About CodeNexo
           </p>
-          <BlurText
-            text="With deep technical expertise and a commitment to quality, our team delivers AI-powered solutions, full-stack applications, and custom integrations that drive real business results. We work closely with clients to build scalable, production-ready systems designed for long-term success."
-            delay={120}
-            animateBy="words"
-            direction="top"
-            className="max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl sm:leading-[1.75]"
-          />
+          <p className="max-w-xl text-lg leading-relaxed text-white/90 sm:text-xl sm:leading-[1.75]">
+            With deep technical expertise and a commitment to quality, our team delivers AI-powered solutions,
+            full-stack applications, and custom integrations that drive real business results. We work closely
+            with clients to build scalable, production-ready systems designed for long-term success.
+          </p>
           <p className="mt-6 max-w-lg text-sm leading-7 text-white/60 sm:text-base">
-            Instead of cycling stacked panels, this section now presents our principles as a composed set
-            of cards that feel more like a studio wall: clear, tactile, and easy to scan at a glance.
+            Our principles are simple: build useful systems, communicate clearly, and stay accountable from
+            discovery through long-term support.
           </p>
         </div>
 
-        <div className="grid auto-rows-[minmax(220px,1fr)] gap-4 sm:grid-cols-2">
+        <div className="grid gap-4 sm:grid-cols-2">
           {aboutCards.map((card) => (
             <article
               key={card.title}
-              className={`group relative overflow-hidden rounded-[2rem] border p-6 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-1 ${card.tone}`}
+              className={`group relative overflow-hidden rounded-[2rem] border p-6 shadow-[0_20px_60px_rgba(0,0,0,0.18)] transition-transform duration-300 hover:-translate-y-1 sm:p-7 ${card.tone}`}
             >
               <div className="absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                 <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#f39c12]/60 to-transparent" />
               </div>
 
-              <div className="relative flex h-full flex-col">
+              <div className="relative">
                 <span className="mb-5 inline-flex w-fit items-center rounded-full border border-current/15 px-3 py-1 text-[0.65rem] font-semibold uppercase tracking-[0.22em] opacity-70">
                   {card.label}
                 </span>
@@ -79,7 +76,7 @@ const AboutUsSection = () => {
                   {card.body}
                 </p>
 
-                <div className="mt-auto pt-8">
+                <div className="pt-8">
                   <div className="h-px w-full bg-current/10" />
                 </div>
               </div>

@@ -57,15 +57,6 @@ const serviceVisuals = [
   },
 ]
 
-const cardClasses = [
-  'sm:col-span-2 sm:row-span-2',
-  '',
-  '',
-  '',
-  '',
-  'sm:col-span-2',
-]
-
 const ServicesSection = () => {
   return (
     <section className="w-full py-4 text-white">
@@ -82,7 +73,7 @@ const ServicesSection = () => {
         </p>
       </div>
 
-      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
+      <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-3">
         {SERVICES.map((service, index) => {
           const visual = serviceVisuals[index]
           const Icon = visual.icon
@@ -91,13 +82,13 @@ const ServicesSection = () => {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className={`group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#101010] p-6 shadow-[0_18px_60px_rgba(0,0,0,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_28px_80px_rgba(0,0,0,0.34)] ${cardClasses[index] ?? ''}`}
+              className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-[#101010] p-6 shadow-[0_18px_60px_rgba(0,0,0,0.24)] transition-all duration-300 hover:-translate-y-1 hover:border-white/20 hover:shadow-[0_28px_80px_rgba(0,0,0,0.34)] sm:p-7"
             >
               <div className={`absolute inset-0 bg-gradient-to-br ${visual.glow} opacity-100`} />
               <div className="absolute -right-10 -top-10 h-36 w-36 rounded-full border border-white/10 bg-white/[0.03]" />
               <div className="absolute bottom-4 right-4 h-20 w-20 rounded-full border border-white/5 bg-black/10 blur-2xl" />
 
-              <div className="relative z-10 flex h-full flex-col">
+              <div className="relative z-10">
                 <div className="flex items-start justify-between gap-4">
                   <div
                     className="inline-flex h-14 w-14 items-center justify-center rounded-2xl border border-white/10 bg-black/25 backdrop-blur-sm"
@@ -137,7 +128,7 @@ const ServicesSection = () => {
                   {service.short}
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-2">
+                <div className="mt-5 flex flex-wrap gap-2">
                   {service.features.slice(0, 2).map((feature) => (
                     <span
                       key={feature}
@@ -148,7 +139,7 @@ const ServicesSection = () => {
                   ))}
                 </div>
 
-                <div className="mt-auto flex items-center justify-between pt-8">
+                <div className="mt-6 flex items-center justify-between pt-3">
                   <span className="text-sm font-semibold text-white/80">Explore service</span>
                   <span className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/5 transition-transform duration-300 group-hover:translate-x-1">
                     <ArrowRight className="h-4 w-4" />
