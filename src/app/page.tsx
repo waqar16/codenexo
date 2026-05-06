@@ -39,32 +39,32 @@ export default function Home() {
   return (
     <div className={`${bitter.className}`}>
       <Navbar/>
-      <section className="py-16">
+      <section className="pb-10 pt-0 sm:pb-12 md:pb-16">
         <Container>
           <Landing/>
         </Container>
       </section>
-      <section className="py-16">
+      <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <AboutUsSection/>
         </Container>
       </section>
-      <section className="py-16">
+      <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <ServicesSection/>
         </Container>
       </section>
-      <section className="py-16">
+      <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <TeamSection/>
         </Container>
       </section>
-      <section className="py-16">
+      <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <HomeContactUsSection/>
         </Container>
       </section>
-      <section className="py-16">
+      <section className="py-8 sm:py-10 md:py-16">
         <Container>
           {/* Simple internal link cluster for SEO without changing visible design */}
           <nav aria-label="Internal navigation" className="sr-only">
