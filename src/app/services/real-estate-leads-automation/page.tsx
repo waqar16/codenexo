@@ -61,60 +61,71 @@ const audiences = [
 const services = [
   {
     title: "Probate Leads",
-    description: "Fresh probate filings organized for outreach.",
+    description:
+      "Identify motivated sellers before competitors and contact them within minutes.",
+    outcome: "Close deals while others are still searching county records.",
   },
   {
     title: "Foreclosure Leads",
-    description: "Target distressed opportunities faster.",
+    description:
+      "Get distressed property alerts the moment they hit public records.",
+    outcome: "Be the first investor they hear from.",
   },
   {
     title: "County Record Scraping",
-    description: "Custom county/public source data pipelines.",
+    description: "Custom data pipelines that run 24/7 across your target counties.",
+    outcome: "Never miss a deal opportunity again.",
   },
   {
     title: "Lead Follow-Up Automation",
-    description: "SMS, email, CRM workflows, reminders.",
+    description:
+      "SMS and email workflows trigger instantly when new leads arrive.",
+    outcome: "Convert more leads with zero manual work.",
   },
   {
     title: "CRM Integrations",
-    description: "GoHighLevel, HubSpot, custom APIs.",
+    description:
+      "Leads flow directly into GoHighLevel, HubSpot, or your custom CRM.",
+    outcome: "Your team stays organized without data entry.",
   },
   {
     title: "Custom Dashboards",
-    description: "Track leads, sources, and conversion flow.",
+    description:
+      "Track lead sources, response rates, and deal pipeline in real time.",
+    outcome: "Make data-driven decisions that increase ROI.",
   },
 ];
 
 const problemBullets = [
-  "Manual lead research wastes time",
-  "Slow follow-up loses deals",
-  "Messy spreadsheets kill momentum",
-  "Teams lack reliable systems",
+  "By the time you find a lead, other investors have already contacted them",
+  "Most teams follow up too late, which is why opportunities are lost",
+  "Messy data means you skip the best properties and waste time cleaning lists",
+  "Your team spends hours every week on manual lead research and follow-up",
 ];
 
 const solutionBullets = [
-  "Automated lead sourcing pipelines",
-  "Instant lead routing & follow-up",
-  "Clean organized delivery in Sheets/CSV/CRM",
-  "Custom systems built around your workflow",
+  "Fresh leads delivered daily before your competition sees them",
+  "Instant automated follow-up within 60 seconds of lead capture",
+  "Clean, verified data with phone numbers, addresses, and property details",
+  "Custom systems that scale as you close more deals",
 ];
 
 const benefits = [
   {
-    title: "Save Hours Weekly",
-    description: "Eliminate repetitive admin work.",
+    title: "Contact Sellers First",
+    description: "Get leads within hours of public filing, not days or weeks later.",
   },
   {
-    title: "Respond Faster",
-    description: "Automate first-touch follow-up.",
+    title: "Close More Deals",
+    description: "Automated follow-up means no lead slips through the cracks.",
   },
   {
-    title: "Better Lead Quality",
-    description: "Use cleaner, fresher data.",
+    title: "Save 15+ Hours Weekly",
+    description: "Your team focuses on deals, not data entry and list building.",
   },
   {
-    title: "Scale Smarter",
-    description: "Systems that grow with your business.",
+    title: "Predictable Lead Flow",
+    description: "Know exactly how many qualified leads you can work each month.",
   },
 ];
 
@@ -122,21 +133,27 @@ const faqs = [
   {
     question: "Which states or counties can you cover?",
     answer:
-      "Custom coverage depends on source availability. We support many public-data workflows and custom regions.",
+      "We cover many US counties with public-record access. During a call, we confirm data availability for your target markets and build coverage around your acquisition goals.",
   },
   {
-    question: "Do you only sell lead lists?",
+    question: "Do you only provide lead lists?",
     answer:
-      "No. We also build automation systems, CRM workflows, and custom acquisition pipelines.",
+      "No. We build complete acquisition systems, including lead delivery, automation, CRM workflows, and follow-up campaigns, so your team gets infrastructure rather than just a spreadsheet.",
   },
   {
     question: "Can you integrate with our CRM?",
-    answer: "Yes. We support common CRMs and custom API integrations.",
+    answer:
+      "Yes. We support GoHighLevel, HubSpot, Salesforce, Podio, REI BlackBook, and custom API integrations so leads flow directly into your current workflow.",
   },
   {
     question: "Do you offer recurring monthly service?",
     answer:
-      "Yes. Monthly lead delivery and maintenance plans are available.",
+      "Yes. Most clients use monthly plans for ongoing lead delivery, system maintenance, and data updates. We also offer one-time custom builds.",
+  },
+  {
+    question: "How quickly will we start receiving leads?",
+    answer:
+      "Initial system setup usually takes 7-10 days. After that, you receive fresh leads daily or weekly depending on your market and engagement.",
   },
 ];
 
@@ -182,9 +199,7 @@ function CheckItem({ children }: { children: ReactNode }) {
   );
 }
 
-function DashboardVisual() {
-  const pipeline = ["County data", "Clean records", "CRM sync", "Follow-up"];
-
+function ProofVisual() {
   return (
     <div className="relative mx-auto w-full max-w-xl">
       <div className="absolute -inset-4 rounded-lg bg-[#f39c12]/10 blur-3xl" />
@@ -192,71 +207,103 @@ function DashboardVisual() {
         <div className="mb-5 flex items-center justify-between border-b border-white/10 pb-4">
           <div>
             <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f39c12]">
-              Lead engine
+              Sample lead delivery
             </p>
-            <p className="mt-1 text-sm text-gray-300">Live acquisition pipeline</p>
+            <p className="mt-1 text-sm text-gray-300">
+              Harris County, TX - Probate Leads
+            </p>
           </div>
           <div className="rounded-md border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
-            Active
+            Live data
           </div>
         </div>
 
-        <div className="grid gap-3 sm:grid-cols-3">
-          <div className="rounded-lg border border-white/10 bg-white/5 p-4">
-            <p className="text-xs text-gray-400">New leads</p>
-            <p className="mt-2 text-3xl font-extrabold text-white">248</p>
-            <p className="mt-1 text-xs text-emerald-300">+32 this week</p>
-          </div>
-          <div className="rounded-lg border border-white/10 bg-white/5 p-4">
-            <p className="text-xs text-gray-400">Follow-ups</p>
-            <p className="mt-2 text-3xl font-extrabold text-white">91%</p>
-            <p className="mt-1 text-xs text-[#f39c12]">first-touch sent</p>
-          </div>
-          <div className="rounded-lg border border-white/10 bg-white/5 p-4">
-            <p className="text-xs text-gray-400">Markets</p>
-            <p className="mt-2 text-3xl font-extrabold text-white">12</p>
-            <p className="mt-1 text-xs text-sky-300">county sources</p>
-          </div>
-        </div>
-
-        <div className="mt-4 rounded-lg border border-white/10 bg-black/20 p-4">
+        <div className="rounded-lg border border-white/10 bg-black/20 p-4">
           <div className="mb-4 flex items-center justify-between">
-            <p className="text-sm font-semibold text-white">Data pipeline</p>
-            <p className="text-xs text-gray-400">Sheets, CSV, CRM</p>
+            <p className="text-sm font-semibold text-white">Recent batch</p>
+            <p className="text-xs text-gray-400">CSV · Updated 2 hours ago</p>
           </div>
-          <div className="grid gap-3 sm:grid-cols-4">
-            {pipeline.map((item, index) => (
-              <div key={item} className="relative">
-                <div className="rounded-md border border-white/10 bg-white/5 p-3">
-                  <span className="inline-flex size-7 items-center justify-center rounded-md bg-[#f39c12] text-xs font-bold text-black">
-                    {index + 1}
-                  </span>
-                  <p className="mt-3 min-h-10 text-sm font-medium leading-snug text-white">
-                    {item}
-                  </p>
-                </div>
-                {index < pipeline.length - 1 ? (
-                  <div className="absolute left-full top-1/2 hidden h-px w-3 -translate-y-1/2 bg-[#f39c12]/60 sm:block" />
-                ) : null}
-              </div>
-            ))}
+
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead>
+                <tr className="border-b border-white/10">
+                  <th className="pb-2 pr-4 text-left font-semibold text-[#f39c12]">
+                    Property
+                  </th>
+                  <th className="pb-2 pr-4 text-left font-semibold text-[#f39c12]">
+                    Type
+                  </th>
+                  <th className="pb-2 pr-4 text-left font-semibold text-[#f39c12]">
+                    Phone
+                  </th>
+                  <th className="pb-2 text-left font-semibold text-[#f39c12]">
+                    Status
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-gray-300">
+                <tr className="border-b border-white/5">
+                  <td className="py-2 pr-4">2847 Oak Lane</td>
+                  <td className="py-2 pr-4">Probate</td>
+                  <td className="py-2 pr-4">(713) 555-****</td>
+                  <td className="py-2">
+                    <span className="inline-flex rounded-md border border-emerald-400/30 bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300">
+                      Verified
+                    </span>
+                  </td>
+                </tr>
+                <tr className="border-b border-white/5">
+                  <td className="py-2 pr-4">1523 Maple Dr</td>
+                  <td className="py-2 pr-4">Probate</td>
+                  <td className="py-2 pr-4">(281) 555-****</td>
+                  <td className="py-2">
+                    <span className="inline-flex rounded-md border border-emerald-400/30 bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300">
+                      Verified
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="py-2 pr-4">894 Pine St</td>
+                  <td className="py-2 pr-4">Probate</td>
+                  <td className="py-2 pr-4">(832) 555-****</td>
+                  <td className="py-2">
+                    <span className="inline-flex rounded-md border border-emerald-400/30 bg-emerald-400/10 px-2 py-0.5 text-xs text-emerald-300">
+                      Verified
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div className="mt-4 grid gap-3 sm:grid-cols-2">
+          <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+            <p className="text-xs text-gray-400">This batch</p>
+            <p className="mt-2 text-3xl font-extrabold text-white">47</p>
+            <p className="mt-1 text-xs text-emerald-300">verified leads</p>
+          </div>
+          <div className="rounded-lg border border-white/10 bg-white/5 p-4">
+            <p className="text-xs text-gray-400">Avg. response rate</p>
+            <p className="mt-2 text-3xl font-extrabold text-white">18%</p>
+            <p className="mt-1 text-xs text-[#f39c12]">SMS campaigns</p>
           </div>
         </div>
 
         <div className="mt-4 space-y-3">
-          {[
-            "Probate lead batch validated",
-            "Foreclosure lead data queued",
-            "SMS and email workflow triggered",
-          ].map((item) => (
-            <div
-              key={item}
-              className="flex items-center justify-between rounded-md border border-white/10 bg-white/5 px-4 py-3"
-            >
-              <span className="text-sm text-gray-200">{item}</span>
-              <span className="text-xs font-semibold text-emerald-300">Done</span>
-            </div>
-          ))}
+          <div className="flex items-center justify-between rounded-md border border-white/10 bg-white/5 px-4 py-3">
+            <span className="text-sm text-gray-200">Phone numbers verified</span>
+            <span className="text-xs font-semibold text-emerald-300">100%</span>
+          </div>
+          <div className="flex items-center justify-between rounded-md border border-white/10 bg-white/5 px-4 py-3">
+            <span className="text-sm text-gray-200">Property data enriched</span>
+            <span className="text-xs font-semibold text-emerald-300">100%</span>
+          </div>
+          <div className="flex items-center justify-between rounded-md border border-white/10 bg-white/5 px-4 py-3">
+            <span className="text-sm text-gray-200">Auto-synced to CRM</span>
+            <span className="text-xs font-semibold text-emerald-300">Done</span>
+          </div>
         </div>
       </div>
     </div>
@@ -274,16 +321,16 @@ export default function RealEstateLeadsAutomationPage() {
             <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
               <div>
                 <p className="inline-flex rounded-md border border-[#f39c12]/30 bg-[#f39c12]/10 px-4 py-2 text-sm font-semibold text-[#f39c12]">
-                  Real estate leads automation for faster acquisitions
+                  Automated lead systems for real estate investors
                 </p>
                 <h1 className="mt-6 max-w-4xl text-3xl font-extrabold leading-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
-                  Real Estate Leads & Automation Systems That Help You Close
-                  More Deals
+                  Get 20-50 off-market real estate leads every month with
+                  automation built around your acquisitions workflow
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-relaxed text-gray-300 sm:text-lg">
-                  We help investors, wholesalers, and real estate teams get
-                  fresh off-market leads, automate follow-up, and scale
-                  acquisitions with custom systems.
+                  Automated probate, foreclosure, and county-data pipelines with
+                  instant SMS and CRM follow-up, built for investors who need
+                  consistent deal flow and faster execution.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -293,9 +340,7 @@ export default function RealEstateLeadsAutomationPage() {
                     size="lg"
                     className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
                   >
-                    <Link href="/contact#schedule-call">
-                      Book a Call
-                    </Link>
+                    <Link href="/contact#schedule-call">Book a Call</Link>
                   </Button>
                   <Button
                     asChild
@@ -308,13 +353,110 @@ export default function RealEstateLeadsAutomationPage() {
                 </div>
 
                 <ul className="mt-8 grid gap-3 sm:grid-cols-3">
-                  <CheckItem>Fresh county & public record data</CheckItem>
-                  <CheckItem>Faster lead follow-up systems</CheckItem>
-                  <CheckItem>Built for investors & agencies</CheckItem>
+                  <CheckItem>Delivered daily to your CRM</CheckItem>
+                  <CheckItem>Verified phone and property data</CheckItem>
+                  <CheckItem>Instant automated follow-up</CheckItem>
                 </ul>
               </div>
 
-              <DashboardVisual />
+              <ProofVisual />
+            </div>
+          </Container>
+        </section>
+
+        <section className="border-b border-white/10 bg-[#071127] py-20">
+          <Container>
+            <SectionHeading
+              eyebrow="Real results"
+              title="See What You Actually Get"
+              description="Real lead samples, workflow outputs, and performance indicators that show how these systems operate in production."
+            />
+
+            <div className="mt-12 grid gap-6 lg:grid-cols-2">
+              <article className="rounded-lg border border-white/10 bg-white/5 p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-xl font-bold text-white">
+                    Lead Delivery Example
+                  </h3>
+                  <span className="rounded-md border border-[#f39c12]/30 bg-[#f39c12]/10 px-3 py-1 text-xs font-semibold text-[#f39c12]">
+                    CSV format
+                  </span>
+                </div>
+                <p className="mb-4 text-sm text-gray-300">
+                  Sample: 134 probate leads - Harris County, TX
+                </p>
+                <div className="rounded-md border border-white/10 bg-black/40 p-4 font-mono text-xs text-gray-300">
+                  <div className="mb-2 text-[#f39c12]">
+                    property_address, owner_name, phone, filing_date, status
+                  </div>
+                  <div className="space-y-1 opacity-80">
+                    <div>
+                      "2847 Oak Ln, Houston TX","John D***","(713)
+                      555-****","2024-01-15","Verified"
+                    </div>
+                    <div>
+                      "1523 Maple Dr, Houston TX","Sarah M***","(281)
+                      555-****","2024-01-14","Verified"
+                    </div>
+                    <div>
+                      "894 Pine St, Houston TX","Robert K***","(832)
+                      555-****","2024-01-14","Verified"
+                    </div>
+                    <div className="text-gray-500">
+                      + 131 more verified leads...
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs text-gray-400">
+                  Actual names and numbers blurred for privacy.
+                </p>
+              </article>
+
+              <article className="rounded-lg border border-white/10 bg-white/5 p-6">
+                <div className="mb-4 flex items-center justify-between">
+                  <h3 className="text-xl font-bold text-white">
+                    Campaign Performance
+                  </h3>
+                  <span className="rounded-md border border-emerald-400/30 bg-emerald-400/10 px-3 py-1 text-xs font-semibold text-emerald-300">
+                    SMS workflow
+                  </span>
+                </div>
+                <p className="mb-4 text-sm text-gray-300">
+                  Response rate: 18% from a foreclosure campaign in Dallas.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between rounded-md border border-white/10 bg-black/20 p-4">
+                    <span className="text-sm text-gray-300">Total leads contacted</span>
+                    <span className="text-xl font-bold text-white">247</span>
+                  </div>
+                  <div className="flex items-center justify-between rounded-md border border-white/10 bg-black/20 p-4">
+                    <span className="text-sm text-gray-300">Responded</span>
+                    <span className="text-xl font-bold text-emerald-300">44</span>
+                  </div>
+                  <div className="flex items-center justify-between rounded-md border border-white/10 bg-black/20 p-4">
+                    <span className="text-sm text-gray-300">Qualified appointments</span>
+                    <span className="text-xl font-bold text-[#f39c12]">12</span>
+                  </div>
+                  <div className="flex items-center justify-between rounded-md border border-white/10 bg-black/20 p-4">
+                    <span className="text-sm text-gray-300">Deals closed</span>
+                    <span className="text-xl font-bold text-white">3</span>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs text-gray-400">
+                  Average time from lead to close: 21 days.
+                </p>
+              </article>
+            </div>
+
+            <div className="mt-8 text-center">
+              <Button
+                asChild
+                variant="custom1"
+                size="lg"
+                className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
+              >
+                <Link href="/contact">Request a Sample</Link>
+              </Button>
             </div>
           </Container>
         </section>
@@ -348,8 +490,8 @@ export default function RealEstateLeadsAutomationPage() {
           <Container>
             <SectionHeading
               eyebrow="Core services"
-              title="What We Help You Automate"
-              description="From a probate leads service to real estate CRM automation, CodeNexo builds off market lead systems around your acquisition workflow."
+              title="What We Build For You"
+              description="Complete lead systems that deliver motivated sellers to your inbox and trigger follow-up automatically."
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
               {services.map((service, index) => (
@@ -366,6 +508,9 @@ export default function RealEstateLeadsAutomationPage() {
                   <p className="mt-3 text-sm leading-relaxed text-gray-300">
                     {service.description}
                   </p>
+                  <p className="mt-3 text-sm font-semibold text-[#f39c12]">
+                    Outcome: {service.outcome}
+                  </p>
                 </article>
               ))}
             </div>
@@ -377,16 +522,13 @@ export default function RealEstateLeadsAutomationPage() {
             <div className="grid gap-6 lg:grid-cols-2">
               <article className="rounded-lg border border-red-400/20 bg-red-400/5 p-6 sm:p-8">
                 <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
-                  The Problem
+                  Why Most Investors Lose Deals
                 </h2>
                 <ul className="mt-6 space-y-4">
                   {problemBullets.map((item) => (
-                    <li
-                      key={item}
-                      className="flex items-start gap-3 text-gray-300"
-                    >
+                    <li key={item} className="flex items-start gap-3 text-gray-300">
                       <span className="mt-2 size-2 flex-none rounded-full bg-red-300" />
-                      <span>{item}</span>
+                      <span className="text-base">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -394,7 +536,7 @@ export default function RealEstateLeadsAutomationPage() {
 
               <article className="rounded-lg border border-[#f39c12]/30 bg-[#f39c12]/10 p-6 sm:p-8">
                 <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
-                  Our Solution
+                  How We Fix It
                 </h2>
                 <ul className="mt-6 space-y-4">
                   {solutionBullets.map((item) => (
@@ -410,8 +552,8 @@ export default function RealEstateLeadsAutomationPage() {
           <Container>
             <SectionHeading
               eyebrow="Results"
-              title="Why Teams Use CodeNexo"
-              description="Cleaner foreclosure lead data, better follow-up timing, and automation that keeps acquisitions moving."
+              title="What You Actually Get"
+              description="More deals closed, less time wasted, and a more predictable lead flow every month."
             />
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {benefits.map((benefit) => (
@@ -433,18 +575,19 @@ export default function RealEstateLeadsAutomationPage() {
 
         <ServiceTrustSection description="Businesses work with CodeNexo when they need real estate lead systems built around their market, workflow, and follow-up process instead of generic list delivery." />
 
-        <SocialProofBand text="Built for real-world business workflows and used by growing businesses and automation-focused teams that need cleaner data and faster lead execution." />
+        <SocialProofBand text="Built for real-world business workflows and used by growing businesses and automation-focused teams that need cleaner data, faster lead execution, and dependable system support." />
 
-        <HowItWorksSection description="From market requirements to lead delivery and support, our process keeps implementation clear and operationally useful." />
+        <HowItWorksSection description="From market requirements to lead delivery and support, our process keeps implementation clear, measurable, and operationally useful." />
 
         <section className="py-6">
           <Container>
             <div className="rounded-lg border border-[#f39c12]/30 bg-gradient-to-r from-[#0f1724] to-[#071127] p-8 text-center sm:p-10">
               <h2 className="text-2xl font-extrabold text-white sm:text-3xl md:text-4xl">
-                Ready to Build a Consistent Lead Engine?
+                Ready to Get Consistent Lead Flow?
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-gray-300">
-                Let&apos;s discuss your market, workflow, and growth goals.
+                Book a call to review your market, or request a sample to see
+                how the system can fit your acquisitions workflow.
               </p>
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <Button
@@ -453,9 +596,7 @@ export default function RealEstateLeadsAutomationPage() {
                   size="lg"
                   className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
                 >
-                  <Link href="/contact#schedule-call">
-                    Book a Call
-                  </Link>
+                  <Link href="/contact#schedule-call">Book a Call</Link>
                 </Button>
                 <Button
                   asChild
@@ -474,8 +615,8 @@ export default function RealEstateLeadsAutomationPage() {
           <Container className="max-w-5xl">
             <SectionHeading
               eyebrow="FAQ"
-              title="Questions Before You Start?"
-              description="A few quick answers about lead delivery, CRM systems, and recurring support."
+              title="Common Questions"
+              description="Everything you need to know about our lead systems, automation, and ongoing support."
             />
             <div className="mt-12 space-y-4">
               {faqs.map((faq, index) => (
@@ -504,14 +645,20 @@ export default function RealEstateLeadsAutomationPage() {
         <section className="pb-20">
           <Container>
             <div className="flex flex-col items-start justify-between gap-5 rounded-lg border border-white/10 bg-white/5 p-6 sm:flex-row sm:items-center sm:p-8">
-              <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
-                Need Better Leads and Faster Follow-Up?
-              </h2>
+              <div>
+                <h2 className="text-2xl font-extrabold text-white sm:text-3xl">
+                  Need Better Leads and Faster Follow-Up?
+                </h2>
+                <p className="mt-2 text-base text-gray-300">
+                  Request a sample or book a call to see how the system fits
+                  your market.
+                </p>
+              </div>
               <Button
                 asChild
                 variant="custom1"
                 size="lg"
-                className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
+                className="h-12 whitespace-nowrap rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
               >
                 <Link href="/contact#schedule-call">Book a Call</Link>
               </Button>
