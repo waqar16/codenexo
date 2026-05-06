@@ -85,7 +85,7 @@ const ServicesPage = () => {
                   <Link href={`/services/${s.slug}`} className="no-underline">
                     <Button variant="custom1">Explore</Button>
                   </Link>
-                  <span className="text-xs text-gray-400">Learn more →</span>
+                  <span className="text-xs text-gray-400">Learn more</span>
                 </div>
               </article>
             ))}
@@ -96,11 +96,11 @@ const ServicesPage = () => {
       <section className="py-16">
         <Container>
           <div className="bg-gradient-to-r from-[#0f1724] to-[#071127] p-8 rounded-xl text-white">
-            <h3 className="text-2xl font-bold leading-tight">Ready to build?</h3>
-            <p className="mt-2 text-base sm:text-lg leading-relaxed text-gray-300">Tell us about your project and we&apos;ll match the right team and solution.</p>
+            <h3 className="text-2xl font-bold leading-tight">Ready to move forward?</h3>
+            <p className="mt-2 text-base sm:text-lg leading-relaxed text-gray-300">Tell us about your workflow, project, or delivery goals and we&apos;ll recommend the right next step.</p>
             <div className="mt-4">
               <Link href="/contact">
-                <Button variant="custom1">Let&apos;s Build Together</Button>
+                <Button variant="custom1">Contact Us</Button>
               </Link>
             </div>
           </div>

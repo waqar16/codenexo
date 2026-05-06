@@ -139,7 +139,7 @@ const ContactForm = () => {
         <div className="text-center mb-12">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Start Your Project</h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300 max-w-xl mx-auto">
-            Fill out the form below and we'll get back to you with a detailed proposal tailored to your needs.
+            Fill out the form below and we&apos;ll get back to you with a detailed proposal tailored to your needs.
           </p>
         </div>
 
@@ -148,7 +148,7 @@ const ContactForm = () => {
           {submitStatus === 'success' && (
             <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 text-center">
               <p className="text-green-400 font-semibold">✓ Message sent successfully!</p>
-              <p className="text-sm text-gray-300 mt-1">We'll get back to you within 24 hours.</p>
+              <p className="text-sm text-gray-300 mt-1">We&apos;ll get back to you within 24 hours.</p>
             </div>
           )}
 

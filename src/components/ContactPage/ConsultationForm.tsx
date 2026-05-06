@@ -165,9 +165,9 @@ const ConsultationForm = () => {
     <section id="contact-form" className="relative w-full bg-gradient-to-b from-[#0b1020] via-[#071228] to-[#041025] text-white py-16 md:py-24">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Book a Free Consultation Call</h2>
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold leading-tight">Contact Us About Your Project</h2>
           <p className="mt-4 text-base sm:text-lg leading-relaxed text-gray-300 max-w-xl mx-auto">
-            Fill out the form below with your project details. We'll review your requirements and get back to you within 24 hours.
+            Share your requirements, business goals, or sample request and we&apos;ll review everything within 24 hours.
           </p>
         </div>
 
@@ -178,9 +178,9 @@ const ConsultationForm = () => {
               {/* Success Message */}
               {submitStatus === 'success' && (
                 <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-4 text-center">
-                  <p className="text-green-400 font-semibold">✓ Thank you for your submission!</p>
+                  <p className="text-green-400 font-semibold">Thank you for your submission.</p>
                   <p className="text-sm text-gray-300 mt-1">
-                    Thanks! We've received your details and will get back to you within 24 hours.
+                    Thanks! We&apos;ve received your details and will get back to you within 24 hours.
                   </p>
                 </div>
               )}
@@ -188,7 +188,7 @@ const ConsultationForm = () => {
               {/* Error Message */}
               {submitStatus === 'error' && (
                 <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-4 text-center">
-                  <p className="text-red-400 font-semibold">✗ Something went wrong</p>
+                  <p className="text-red-400 font-semibold">Something went wrong.</p>
                   <p className="text-sm text-gray-300 mt-1">Please try again or email us directly at contact@codenexo.tech</p>
                 </div>
               )}
@@ -435,7 +435,7 @@ const ConsultationForm = () => {
                 className="w-full sm:w-auto text-base font-semibold mt-4"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? 'Submitting...' : 'Submit'}
+                {isSubmitting ? 'Submitting...' : 'Contact Us'}
               </Button>
             </form>
           </div>

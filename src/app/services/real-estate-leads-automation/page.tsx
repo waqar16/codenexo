@@ -6,8 +6,12 @@ import Footer from "@/components/Footer/Footer";
 import Container from "@/components/layout/Container";
 import { Button } from "@/components/ui/button";
 import { bitter } from "@/fonts/fonts";
+import ServiceTrustSection from "@/components/Trust/ServiceTrustSection";
+import HowItWorksSection from "@/components/Trust/HowItWorksSection";
+import SocialProofBand from "@/components/Trust/SocialProofBand";
+import { COMPANY } from "@/constants/company";
 
-const pageUrl = "https://codenexo.tech/services/real-estate-leads-automation";
+const pageUrl = `${COMPANY.website}/services/real-estate-leads-automation`;
 const pageTitle = "Real Estate Leads & Automation Services | CodeNexo";
 const pageDescription =
   "Get probate leads, foreclosure data, county records, and automation systems for real estate investors, wholesalers, and agencies.";
@@ -24,14 +28,14 @@ export const metadata: Metadata = {
     title: pageTitle,
     description: pageDescription,
     url: pageUrl,
-    images: ["/og-image.png"],
+    images: [COMPANY.ogImage],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
     title: pageTitle,
     description: pageDescription,
-    images: ["/og-image.png"],
+    images: [COMPANY.ogImage],
   },
 };
 
@@ -111,21 +115,6 @@ const benefits = [
   {
     title: "Scale Smarter",
     description: "Systems that grow with your business.",
-  },
-];
-
-const steps = [
-  {
-    title: "Tell Us Your Market",
-    description: "State, county, niche, or workflow pain.",
-  },
-  {
-    title: "We Build Your System",
-    description: "Lead pipeline, automation, integrations.",
-  },
-  {
-    title: "You Focus on Deals",
-    description: "Close more opportunities with less chaos.",
   },
 ];
 
@@ -305,7 +294,7 @@ export default function RealEstateLeadsAutomationPage() {
                     className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
                   >
                     <Link href="/contact#schedule-call">
-                      Book Free Strategy Call
+                      Book a Call
                     </Link>
                   </Button>
                   <Button
@@ -314,7 +303,7 @@ export default function RealEstateLeadsAutomationPage() {
                     size="lg"
                     className="h-12 rounded-lg border-white/15 bg-white/5 px-6 text-base font-bold text-white hover:bg-white/10 hover:text-white"
                   >
-                    <Link href="/contact">Get Lead Samples</Link>
+                    <Link href="/contact">Request a Sample</Link>
                   </Button>
                 </div>
 
@@ -442,32 +431,11 @@ export default function RealEstateLeadsAutomationPage() {
           </Container>
         </section>
 
-        <section className="py-20">
-          <Container>
-            <SectionHeading
-              eyebrow="How it works"
-              title="Simple 3-Step Process"
-            />
-            <div className="mt-12 grid gap-5 md:grid-cols-3">
-              {steps.map((step, index) => (
-                <article
-                  key={step.title}
-                  className="relative rounded-lg border border-white/10 bg-white/5 p-6"
-                >
-                  <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#f39c12]">
-                    Step {index + 1}
-                  </p>
-                  <h3 className="mt-4 text-xl font-bold text-white">
-                    {step.title}
-                  </h3>
-                  <p className="mt-3 text-sm leading-relaxed text-gray-300">
-                    {step.description}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </Container>
-        </section>
+        <ServiceTrustSection description="Businesses work with CodeNexo when they need real estate lead systems built around their market, workflow, and follow-up process instead of generic list delivery." />
+
+        <SocialProofBand text="Built for real-world business workflows and used by growing businesses and automation-focused teams that need cleaner data and faster lead execution." />
+
+        <HowItWorksSection description="From market requirements to lead delivery and support, our process keeps implementation clear and operationally useful." />
 
         <section className="py-6">
           <Container>
@@ -486,7 +454,7 @@ export default function RealEstateLeadsAutomationPage() {
                   className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
                 >
                   <Link href="/contact#schedule-call">
-                    Book Free Strategy Call
+                    Book a Call
                   </Link>
                 </Button>
                 <Button
@@ -495,7 +463,7 @@ export default function RealEstateLeadsAutomationPage() {
                   size="lg"
                   className="h-12 rounded-lg border-white/15 bg-white/5 px-6 text-base font-bold text-white hover:bg-white/10 hover:text-white"
                 >
-                  <Link href="/contact">Request Custom Quote</Link>
+                  <Link href="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>
@@ -545,7 +513,7 @@ export default function RealEstateLeadsAutomationPage() {
                 size="lg"
                 className="h-12 rounded-lg px-6 text-base font-bold text-black hover:bg-[#f6ad27]"
               >
-                <Link href="/contact#schedule-call">Book a Free Call</Link>
+                <Link href="/contact#schedule-call">Book a Call</Link>
               </Button>
             </div>
           </Container>

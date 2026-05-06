@@ -1,50 +1,57 @@
-import History from '@/components/AboutUsPage/History'
-import Landing from '@/components/AboutUsPage/Landing'
-import WhyUs from '@/components/AboutUsPage/WhyUs'
-import Navbar from '@/components/Navbar/Navbar'
-import TeamSection from '@/components/TeamSection/TeamSection'
-import Footer from '@/components/Footer/Footer'
-import { bitter } from '@/fonts/fonts'
-import React from 'react'
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import Container from '@/components/layout/Container'
+import History from "@/components/AboutUsPage/History";
+import Landing from "@/components/AboutUsPage/Landing";
+import WhyUs from "@/components/AboutUsPage/WhyUs";
+import Navbar from "@/components/Navbar/Navbar";
+import TeamSection from "@/components/TeamSection/TeamSection";
+import Footer from "@/components/Footer/Footer";
+import { bitter } from "@/fonts/fonts";
+import React from "react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import Container from "@/components/layout/Container";
+import { COMPANY } from "@/constants/company";
 
 export function generateMetadata(): Metadata {
-  const title = 'About CodeNexo – Team & Vision';
-  const description = 'Learn about CodeNexo’s engineering culture, product mindset and team delivering AI automation, custom software and scalable systems.';
-  const url = 'https://codenexo.tech/about';
+  const title = "About CodeNexo - Software and Automation Company";
+  const description =
+    "Learn how CodeNexo builds automation systems, scraping pipelines, API integrations, and custom software for real business operations.";
+  const url = `${COMPANY.website}/about`;
   return {
     title,
     description,
     alternates: { canonical: url },
-    openGraph: { title, description, url, images: ['/og-image.png'] },
-    twitter: { card: 'summary_large_image', title, description, images: ['/og-image.png'] }
-  }
+    openGraph: { title, description, url, images: [COMPANY.ogImage] },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [COMPANY.ogImage],
+    },
+  };
 }
 
 const page = () => {
   return (
     <div className={`${bitter.className}`}>
-      <Navbar/>
+      <Navbar />
       <section className="py-16">
         <Container>
-          <Landing/>
+          <Landing />
         </Container>
       </section>
       <section className="py-16">
         <Container>
-          <History/>
+          <History />
         </Container>
       </section>
       <section className="py-16">
         <Container>
-          <WhyUs/>
+          <WhyUs />
         </Container>
       </section>
       <section className="py-16">
         <Container>
-          <TeamSection/>
+          <TeamSection />
         </Container>
       </section>
       <section className="py-16">
@@ -55,9 +62,9 @@ const page = () => {
           </nav>
         </Container>
       </section>
-      <Footer/>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;

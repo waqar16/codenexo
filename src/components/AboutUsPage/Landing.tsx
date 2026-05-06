@@ -1,28 +1,29 @@
-import React from 'react'
+import React from "react";
 
 const Landing = () => {
   return (
-     <section
-      className="relative w-full h-[280px] sm:h-[380px] md:h-[80vh] bg-cover bg-center bg-no-repeat flex items-center justify-center text-center"
-      style={{ backgroundImage: "url('/about-bg.jpg')" }} // <-- Replace with your image
+    <section
+      className="relative flex h-[280px] w-full items-center justify-center bg-cover bg-center bg-no-repeat text-center sm:h-[380px] md:h-[80vh]"
+      style={{ backgroundImage: "url('/about-bg.jpg')" }}
     >
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/80"></div>
+      <div className="absolute inset-0 bg-black/80" />
 
-      {/* Text Content */}
-      <div className="relative z-10 max-w-3xl px-6">
-        <h2 className="text-white font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight">
-          Building AI-Powered Products and Automation for Modern Businesses
+      <div className="relative z-10 max-w-4xl px-6">
+        <h2 className="text-2xl font-extrabold leading-tight text-white sm:text-3xl md:text-4xl lg:text-5xl">
+          Software and Automation Systems Built for Real Business Workflows
         </h2>
-        <p className="text-gray-200 mt-4 text-base sm:text-lg leading-relaxed">
-         We specialize in AI & automation, full-stack web and app development, custom software solutions, and seamless API integrations. From concept to deployment, we deliver production-ready systems that scale with your business.
+        <p className="mt-4 text-base leading-relaxed text-gray-200 sm:text-lg">
+          CodeNexo helps companies automate operations, build custom internal
+          tools, connect APIs, and deploy reliable AI-enabled systems without
+          relying on off-the-shelf shortcuts.
         </p>
-        <p className="text-gray-300 mt-3 text-base sm:text-lg leading-relaxed font-medium">
-          We help founders and teams turn complex ideas into reliable, scalable products.
+        <p className="mt-3 text-base font-medium leading-relaxed text-gray-300 sm:text-lg">
+          Our mission is simple: improve business efficiency through automation,
+          dependable engineering, and systems that support long-term growth.
         </p>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Landing
+export default Landing;

@@ -110,7 +110,7 @@ const ContactUsSection = () => {
       <div className='w-full'>
         <form onSubmit={handleSubmit} className="w-full mt-10 space-y-6" suppressHydrationWarning data-lpignore="true">
           {status === 'success' && (
-            <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3 text-center text-sm">Thank you! We'll respond within 24 hours.</div>
+            <div className="bg-green-500/10 border border-green-500/30 rounded-lg p-3 text-center text-sm">Thank you! We&apos;ll respond within 24 hours.</div>
           )}
           {status === 'error' && (
             <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 text-center text-sm">Failed to submit. Please retry.</div>
