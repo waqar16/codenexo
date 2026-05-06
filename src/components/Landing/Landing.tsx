@@ -57,11 +57,12 @@ const Landing = () => {
       <div className="absolute inset-0 z-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.18)_0%,rgba(0,0,0,0.52)_38%,rgba(0,0,0,0.78)_100%)]" />
       <div className="absolute inset-0 z-0 bg-[radial-gradient(circle_at_top,rgba(243,156,18,0.18),transparent_32%)] lg:bg-[radial-gradient(circle_at_62%_8%,rgba(243,156,18,0.14),transparent_24%),radial-gradient(circle_at_74%_44%,rgba(255,255,255,0.07),transparent_18%),linear-gradient(90deg,rgba(0,0,0,0.78)_0%,rgba(0,0,0,0.62)_30%,rgba(0,0,0,0.28)_58%,rgba(0,0,0,0.68)_100%)]" />
       <div className="absolute inset-y-0 left-0 z-0 hidden w-[46%] bg-[linear-gradient(90deg,rgba(5,5,5,0.96),rgba(5,5,5,0.86)_58%,rgba(5,5,5,0.08))] lg:block" />
-      <div className="absolute inset-y-[8%] right-[7%] z-0 hidden w-[34%] rounded-[2.5rem] border border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.05),rgba(255,255,255,0.01))] shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_40px_100px_rgba(0,0,0,0.35)] backdrop-blur-[2px] lg:block" />
+      <div className="absolute inset-y-[10%] right-[7%] z-0 hidden w-[30%] rounded-[2.5rem] border border-white/6 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))] shadow-[0_0_0_1px_rgba(255,255,255,0.04),0_40px_100px_rgba(0,0,0,0.35)] backdrop-blur-[2px] xl:block" />
       <div className="absolute right-[12%] top-[12%] z-0 hidden h-32 w-32 rounded-full bg-[#f39c12]/10 blur-3xl lg:block" />
       <div className="absolute bottom-[14%] right-[18%] z-0 hidden h-24 w-24 rounded-full bg-white/[0.05] blur-2xl lg:block" />
-      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col justify-center px-5 pb-14 pt-24 sm:min-h-[calc(100svh-5rem)] sm:px-6 sm:pb-16 sm:pt-28 lg:px-8 lg:pb-20 lg:pt-32">
-        <div className="flex w-full flex-col gap-6 md:max-w-3xl md:gap-7">
+      <div className="relative z-10 mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col justify-center px-5 pb-14 pt-24 sm:min-h-[calc(100svh-5rem)] sm:px-6 sm:pb-16 sm:pt-28 lg:px-8 lg:pb-20 lg:pt-28">
+        <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,0.92fr)_minmax(280px,0.58fr)] lg:gap-12">
+          <div className="flex w-full flex-col gap-5 md:max-w-3xl lg:max-w-[48rem] lg:gap-6">
           <div className="inline-flex w-fit items-center rounded-full border border-[#f39c12]/30 bg-black/35 px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#f5c268] sm:text-xs">
             CodeNexo
           </div>
@@ -69,7 +70,7 @@ const Landing = () => {
           <SplitText
             text="High-performance software systems built for growth"
             tag="h1"
-            className="max-w-3xl text-left text-[2.35rem] font-bold leading-[0.95] tracking-[-0.04em] text-white sm:text-5xl md:text-6xl lg:text-7xl"
+            className="max-w-[12ch] text-left text-[2.35rem] font-bold leading-[0.92] tracking-[-0.045em] text-white sm:text-5xl md:text-[4.25rem] lg:text-[5.3rem] xl:text-[5.8rem]"
             delay={45}
             duration={0.6}
             ease="power3.out"
@@ -81,7 +82,7 @@ const Landing = () => {
             textAlign="left"
           />
 
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-2 pt-1 lg:flex-row lg:items-center lg:gap-4">
             <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/70 sm:text-base">
               Built with
             </p>
@@ -99,18 +100,18 @@ const Landing = () => {
             />
           </div>
 
-          <FadeContent blur={true} duration={1000} className="max-w-xl" easing="ease-out" initialOpacity={0}>
-            <p className="max-w-xl text-base leading-8 text-gray-200 sm:text-lg">
+          <FadeContent blur={true} duration={1000} className="max-w-[40rem]" easing="ease-out" initialOpacity={0}>
+            <p className="max-w-[36rem] text-base leading-8 text-gray-200 sm:text-lg lg:text-[1.12rem]">
               We design modern web platforms, AI automations, and data systems that help businesses move faster, operate smarter, and scale with confidence.
             </p>
           </FadeContent>
 
-          <div className="flex w-full flex-col gap-3 pt-2 sm:w-auto sm:flex-row">
+          <div className="flex w-full flex-col gap-3 pt-3 sm:w-auto sm:flex-row">
             <Button
               asChild
               variant="custom1"
               size="lg"
-              className="h-12 w-full rounded-xl px-6 text-base font-bold text-black hover:bg-[#f6ad27] sm:w-auto"
+              className="h-12 w-full rounded-xl px-7 text-base font-bold text-black hover:bg-[#f6ad27] sm:w-auto"
             >
               <Link href="/contact">Start a Project</Link>
             </Button>
@@ -118,13 +119,13 @@ const Landing = () => {
               asChild
               variant="outline"
               size="lg"
-              className="h-12 w-full rounded-xl border-white/15 bg-white/5 px-6 text-base font-bold text-white hover:bg-white/10 hover:text-white sm:w-auto"
+              className="h-12 w-full rounded-xl border-white/15 bg-white/5 px-7 text-base font-bold text-white hover:bg-white/10 hover:text-white sm:w-auto"
             >
               <Link href="/services">Explore Services</Link>
             </Button>
           </div>
 
-          <div className="grid gap-3 pt-3 text-sm text-gray-300 sm:grid-cols-3 sm:pt-4">
+          <div className="grid gap-3 pt-4 text-sm text-gray-300 sm:grid-cols-3 lg:max-w-[52rem]">
             <div className="rounded-xl border border-white/10 bg-black/25 px-4 py-3">
               AI integration and workflow automation
             </div>
@@ -133,6 +134,43 @@ const Landing = () => {
             </div>
             <div className="rounded-xl border border-white/10 bg-black/25 px-4 py-3">
               Data pipelines, scraping, and system support
+            </div>
+          </div>
+        </div>
+          <div className="relative hidden h-full min-h-[32rem] lg:block">
+            <div className="absolute inset-x-[10%] top-[12%] rounded-[2rem] border border-white/8 bg-[linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02))] p-6 backdrop-blur-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-[0.7rem] font-semibold uppercase tracking-[0.24em] text-[#f6c35b]">
+                  Delivery focus
+                </span>
+                <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                  Production-ready
+                </span>
+              </div>
+              <div className="mt-8 space-y-4">
+                <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+                  <p className="text-xs uppercase tracking-[0.18em] text-white/45">Core stack</p>
+                  <p className="mt-3 text-lg font-semibold text-white">AI automation, web engineering, data systems</p>
+                </div>
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+                    <p className="text-3xl font-bold text-white">Fast</p>
+                    <p className="mt-2 text-sm leading-6 text-white/65">Lean implementation with clear architecture and measurable outcomes.</p>
+                  </div>
+                  <div className="rounded-2xl border border-white/8 bg-black/20 p-4">
+                    <p className="text-3xl font-bold text-white">Clear</p>
+                    <p className="mt-2 text-sm leading-6 text-white/65">Transparent scope, practical systems, and maintainable delivery.</p>
+                  </div>
+                </div>
+                <div className="rounded-2xl border border-[#f39c12]/20 bg-[#f39c12]/10 p-4">
+                  <p className="text-xs uppercase tracking-[0.18em] text-[#f6c35b]">What clients get</p>
+                  <ul className="mt-3 space-y-2 text-sm leading-6 text-white/85">
+                    <li>Custom systems shaped around real business workflows</li>
+                    <li>Execution across product, automation, and integrations</li>
+                    <li>Long-term support beyond launch</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
