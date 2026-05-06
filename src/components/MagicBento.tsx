@@ -51,9 +51,9 @@ const cardData: BentoCardProps[] = [
   },
   {
     color: '#242424',
-    title: 'Blockchain Development',
-    description: 'Innovative blockchain solutions for secure, transparent, and decentralized applications: from smart contracts to DApps and beyond.',
-    label: 'Blockchain'
+    title: 'Custom Software',
+    description: 'Tailored internal tools, dashboards, and business systems designed around your workflows so teams can operate with less friction and better visibility.',
+    label: 'Software'
   },
   {
     color: '#242424',

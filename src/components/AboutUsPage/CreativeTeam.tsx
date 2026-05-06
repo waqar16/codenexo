@@ -20,7 +20,7 @@ const CreativeTeam = () => {
         <div className='flex flex-col items-center w-full bg-black/40 rounded-md p-4'>
             <Image src={'/new-team-01.png'} alt="Team member Hamza Khan" width={300} height={300} loading="lazy" />
             <p className='mt-6 font-bold text-base sm:text-lg leading-relaxed'>Hamza Khan</p>
-            <p className='text-sm font-light mt-2'>Bitcoin Developer</p>
+            <p className='text-sm font-light mt-2'>Backend Developer</p>
         </div>
       </div>
 

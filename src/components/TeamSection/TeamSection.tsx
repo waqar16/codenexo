@@ -17,20 +17,20 @@ export const teamData = [
     skills: ["Leadership", "System Design", "Product Strategy", "AI", "Mobile & Web"]
   },
   {
-    role: "Co-Founder / Bitcoin Developer",
+    role: "Co-Founder / Backend Developer",
     name: "Hamza Khan",
     image: "/hamza.jpeg",
 
     experience: "4+ Years Experience",
     description:
-      "Blockchain enthusiast and Bitcoin developer focused on decentralized apps, smart contracts and secure crypto-based payment systems.",
+      "Backend-focused engineer building reliable APIs, server-side systems, and integration workflows with strong attention to performance and maintainability.",
     socials: {
       facebook: "",
       linkedin: "https://linkedin.com/in/muhammad-hamza-khan-328483223/",
       github: "https://github.com/HamzaKhan-codes",
       website: ""
     },
-    skills: ["Bitcoin", "Blockchain", "Smart Contracts", "Web3", "Node.js"]
+    skills: ["Node.js", "Backend APIs", "System Integrations", "Databases", "Performance"]
   },
   {
     role: "Python / Django Developer",
