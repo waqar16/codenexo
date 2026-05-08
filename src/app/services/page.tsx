@@ -41,7 +41,7 @@ const SERVICE_CARDS = [...SERVICES, REAL_ESTATE_SERVICE_CARD]
 const SERVICE_VISUALS: Record<
   string,
   {
-    icon: React.ComponentType<{ className?: string }>
+    icon: React.ComponentType<{ className?: string; style?: React.CSSProperties }>
     eyebrow: string
     accent: string
     glow: string
