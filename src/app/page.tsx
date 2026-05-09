@@ -1,4 +1,5 @@
- 
+import { TestimonialsSection } from "@/components/Testimonials/TestimonialsSection";
+
 import AboutUsSection from "@/components/AboutUsSection/AboutUsSection";
 import Footer from "@/components/Footer/Footer";
 import Landing from "@/components/Landing/Landing";
@@ -47,11 +48,15 @@ export default function Home() {
           <AboutUsSection/>
         </Container>
       </section>
+
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <ServicesSection/>
         </Container>
       </section>
+      
+      {/* NEW Testimonials Section */}
+      <TestimonialsSection />
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <TeamSection/>
