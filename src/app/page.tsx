@@ -40,9 +40,7 @@ export default function Home() {
   return (
     <div className={`${bitter.className}`}>
       <Navbar/>
-      <section className="pb-10 pt-0 sm:pb-12 md:pb-16">
-        <Landing/>
-      </section>
+      <Landing/>
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <AboutUsSection/>

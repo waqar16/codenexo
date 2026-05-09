@@ -52,7 +52,7 @@ const Landing = () => {
       <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.2)_0%,rgba(0,0,0,0.5)_42%,rgba(0,0,0,0.78)_100%)]" />
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(243,156,18,0.16),transparent_32%)] lg:bg-[linear-gradient(90deg,rgba(0,0,0,0.86)_0%,rgba(0,0,0,0.72)_28%,rgba(0,0,0,0.34)_58%,rgba(0,0,0,0.72)_100%),radial-gradient(circle_at_62%_18%,rgba(243,156,18,0.14),transparent_24%)]" />
 
-      <div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col justify-center px-5 pb-14 pt-24 sm:min-h-[calc(100svh-5rem)] sm:px-6 sm:pb-16 sm:pt-28 lg:px-8 lg:pb-20 lg:pt-28">
+      <div className="relative mx-auto flex min-h-[calc(100svh-4rem)] max-w-7xl flex-col justify-center px-5 pb-10 pt-20 sm:min-h-[calc(100svh-5rem)] sm:px-6 sm:pb-12 sm:pt-20 lg:px-8 lg:pb-14 lg:pt-20">
         <div className="flex w-full flex-col gap-6 lg:max-w-[46rem]">
           <div className="inline-flex w-fit items-center rounded-full border border-[#f39c12]/30 bg-black/35 px-4 py-1.5 text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-[#f5c268] sm:text-xs">
             CodeNexo
@@ -61,7 +61,7 @@ const Landing = () => {
           <SplitText
             text="High-performance software systems built for growth"
             tag="h1"
-            className="max-w-[10.5ch] text-left text-[2.35rem] font-bold leading-[0.94] tracking-[-0.045em] text-white sm:text-5xl md:text-[4.15rem] lg:text-[4.85rem] xl:text-[5.25rem]"
+            className="max-w-full text-left text-[2rem] font-bold leading-[0.94] tracking-[-0.045em] text-white sm:text-4xl md:text-[3.5rem] lg:text-[4rem] xl:text-[4.5rem]"
             delay={45}
             duration={0.6}
             ease="power3.out"
