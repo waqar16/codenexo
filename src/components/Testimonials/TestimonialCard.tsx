@@ -54,7 +54,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({ testimonial })
   const initial = testimonial.clientName.charAt(0).toUpperCase();
 
   return (
-    <div className="w-full rounded-2xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-950/50 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-yellow-500/10">
+    <div className="flex h-full w-full flex-col rounded-2xl border border-gray-800 bg-gradient-to-b from-gray-900/50 to-gray-950/50 p-6 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-yellow-500/30 hover:shadow-yellow-500/10">
       
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
