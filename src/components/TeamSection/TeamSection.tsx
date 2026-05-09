@@ -2,57 +2,44 @@ import React from 'react'
 import TeamCard from './TeamCard';
 export const teamData = [
   {
-    role: "CEO",
+    role: "CEO / Founder",
     name: "Mubashir Babar",
     image: "/mubashir.jpg",
-    experience: "7+ Years Experience",
     description:
       "Visionary leader focused on building high-impact products, scaling talented engineering teams, and driving innovation across AI, Web, and Mobile platforms.",
     socials: {
-      facebook: "",
       linkedin: "https://linkedin.com/in/mubashir-babar",
       github: "https://github.com/mubaxhir",
-      website: "https://upwork.com/freelancers/mubashirbabar2"
     },
-    skills: ["Leadership", "System Design", "Product Strategy", "AI", "Mobile & Web"]
   },
   {
-    role: "Co-Founder / Backend Developer",
+    role: "Co-Founder",
     name: "Hamza Khan",
     image: "/hamza.jpeg",
-
-    experience: "4+ Years Experience",
     description:
-      "Backend-focused engineer building reliable APIs, server-side systems, and integration workflows with strong attention to performance and maintainability.",
+      "Business development leader focusing on strategic partnerships and digital growth, with a strong software engineering background to bridge technical concepts and user-friendly solutions.",
     socials: {
-      facebook: "",
       linkedin: "https://linkedin.com/in/muhammad-hamza-khan-328483223/",
       github: "https://github.com/HamzaKhan-codes",
-      website: ""
     },
-    skills: ["Node.js", "Backend APIs", "System Integrations", "Databases", "Performance"]
   },
   {
     role: "Python / Django Developer",
     name: "Waqar Ahmed Khan",
     image: "/waqar.jpg",
-    experience: "3+ Years Experience",
     description:
       "Backend engineer specializing in Python, Django, REST APIs, and scalable backend architecture with strong focus on security and data-driven systems.",
     socials: {
     },
-    skills: ["Python", "Django", "PostgreSQL", "DRF", "Docker", "AWS"]
   },
   {
     role: "Full Stack MERN / Next.js Developer",
     name: "Saim Shahzad",
     image: "/saim.jpg",
-    experience: "3+ Years Experience",
     description:
       "Full stack engineer building modern, fast and scalable applications using React, Next.js, Node.js and MongoDB. Delivering seamless frontend and backend solutions.",
     socials: {
     },
-    skills: ["Next.js", "React", "Node.js", "MongoDB", "Tailwind", "API Development"]
   }
 ];
 
