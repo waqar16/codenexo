@@ -6,7 +6,7 @@ import Landing from "@/components/Landing/Landing";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import TeamSection from "@/components/TeamSection/TeamSection";
-import { bitter } from "@/fonts/fonts"; 
+import { bitter } from "@/fonts/fonts";
 import type { Metadata } from "next";
 import Link from "next/link";
 import Container from "@/components/layout/Container";
@@ -39,30 +39,30 @@ export function generateMetadata(): Metadata {
 export default function Home() {
   return (
     <div className={`${bitter.className}`}>
-      <Navbar/>
-      <Landing/>
+      <Navbar />
+      <Landing />
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
-          <AboutUsSection/>
+          <AboutUsSection />
         </Container>
       </section>
 
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
-          <ServicesSection/>
+          <ServicesSection />
         </Container>
       </section>
-      
+
       {/* NEW Testimonials Section */}
       <TestimonialsSection />
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
-          <TeamSection/>
+          <TeamSection />
         </Container>
       </section>
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
-          <HomeContactUsSection/>
+          <HomeContactUsSection />
         </Container>
       </section>
       <section className="py-8 sm:py-10 md:py-16">
@@ -75,7 +75,7 @@ export default function Home() {
           </nav>
         </Container>
       </section>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

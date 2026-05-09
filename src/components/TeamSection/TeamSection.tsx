@@ -13,7 +13,7 @@ export const teamData = [
     },
   },
   {
-    role: "Co-Founder",
+    role: "Business Head / Co-Founder",
     name: "Hamza Khan",
     image: "/hamza.jpeg",
     description:
