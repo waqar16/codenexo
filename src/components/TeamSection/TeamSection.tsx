@@ -1,45 +1,55 @@
 import React from 'react'
 import TeamCard from './TeamCard';
-export const teamData = [
+import type { TeamMember } from './TeamCard';
+
+export const teamData: TeamMember[] = [
   {
     role: "CEO / Founder",
     name: "Mubashir Babar",
     image: "/mubashir.jpg",
+    experience: "5+ years",
     description:
       "Visionary leader focused on building high-impact products, scaling talented engineering teams, and driving innovation across AI, Web, and Mobile platforms.",
     socials: {
       linkedin: "https://linkedin.com/in/mubashir-babar",
       github: "https://github.com/mubaxhir",
     },
+    skills: ["AI Systems", "Full Stack", "Product Strategy", "Team Leadership"],
   },
   {
     role: "Business Head / Co-Founder",
     name: "Hamza Khan",
     image: "/hamza.jpeg",
+    experience: "4+ years",
     description:
       "Business development leader focusing on strategic partnerships and digital growth, with a strong software engineering background to bridge technical concepts and user-friendly solutions.",
     socials: {
       linkedin: "https://linkedin.com/in/muhammad-hamza-khan-328483223/",
       github: "https://github.com/HamzaKhan-codes",
     },
+    skills: ["Business Development", "Partnerships", "Software Strategy", "Growth"],
   },
   {
     role: "Python / Django Developer",
     name: "Waqar Ahmed Khan",
     image: "/waqar.jpg",
+    experience: "3+ years",
     description:
       "Backend engineer specializing in Python, Django, REST APIs, and scalable backend architecture with strong focus on security and data-driven systems.",
     socials: {
     },
+    skills: ["Python", "Django", "REST APIs", "Backend Architecture"],
   },
   {
     role: "Full Stack MERN / Next.js Developer",
     name: "Saim Shahzad",
     image: "/saim.jpg",
+    experience: "3+ years",
     description:
       "Full stack engineer building modern, fast and scalable applications using React, Next.js, Node.js and MongoDB. Delivering seamless frontend and backend solutions.",
     socials: {
     },
+    skills: ["React", "Next.js", "Node.js", "MongoDB"],
   }
 ];
 
