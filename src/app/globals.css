@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import "tw-animate-css"; 
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 @custom-variant dark (&:is(.dark *));
 
@@ -123,5 +124,59 @@ html.lenis {
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@utility prose-codenexo {
+  --tw-prose-body: rgb(209 213 219);
+  --tw-prose-headings: rgb(255 255 255);
+  --tw-prose-lead: rgb(229 231 235);
+  --tw-prose-links: rgb(246 195 91);
+  --tw-prose-bold: rgb(255 255 255);
+  --tw-prose-counters: rgb(156 163 175);
+  --tw-prose-bullets: rgb(246 195 91);
+  --tw-prose-hr: rgb(255 255 255 / 0.12);
+  --tw-prose-quotes: rgb(255 255 255);
+  --tw-prose-quote-borders: rgb(243 156 18 / 0.35);
+  --tw-prose-captions: rgb(156 163 175);
+  --tw-prose-code: rgb(255 255 255);
+  --tw-prose-pre-code: rgb(229 231 235);
+  --tw-prose-pre-bg: rgb(3 10 24);
+  --tw-prose-th-borders: rgb(255 255 255 / 0.14);
+  --tw-prose-td-borders: rgb(255 255 255 / 0.1);
+}
+
+@layer components {
+  .prose-codenexo {
+    @apply prose prose-lg max-w-none prose-headings:scroll-mt-28 prose-headings:font-bold prose-headings:tracking-[-0.03em] prose-p:text-gray-300 prose-p:leading-8 prose-li:text-gray-300 prose-li:leading-8 prose-a:font-medium prose-a:no-underline hover:prose-a:text-[#ffd277] prose-strong:text-white prose-code:rounded prose-code:bg-white/8 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-medium prose-code:before:content-none prose-code:after:content-none prose-pre:overflow-x-auto prose-pre:rounded-3xl prose-pre:border prose-pre:border-white/10 prose-pre:bg-[#030a18] prose-pre:px-0 prose-pre:py-0 prose-blockquote:rounded-r-2xl prose-blockquote:border-l-4 prose-blockquote:border-[#f39c12]/50 prose-blockquote:bg-white/[0.03] prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:not-italic prose-hr:border-white/10 prose-img:rounded-3xl prose-img:border prose-img:border-white/10 prose-figure:my-10 prose-table:block prose-table:w-full prose-table:overflow-x-auto;
+  }
+
+  .prose-codenexo pre[data-theme] {
+    @apply my-8 overflow-x-auto rounded-3xl border border-white/10 bg-[#030a18] p-0;
+  }
+
+  .prose-codenexo pre code {
+    @apply grid min-w-full bg-transparent px-0 py-0 text-sm;
+    counter-reset: line;
+  }
+
+  .prose-codenexo pre code [data-line] {
+    @apply border-l-2 border-transparent px-5 py-0.5;
+  }
+
+  .prose-codenexo pre code [data-highlighted-line] {
+    @apply border-[#f39c12] bg-[#f39c12]/10;
+  }
+
+  .prose-codenexo pre code [data-highlighted-chars] {
+    @apply rounded-md bg-white/10;
+  }
+
+  .prose-codenexo :where(.blog-heading-anchor) {
+    @apply ml-2 text-[#f39c12]/0 no-underline transition;
+  }
+
+  .prose-codenexo :where(h2:hover .blog-heading-anchor, h3:hover .blog-heading-anchor) {
+    @apply text-[#f39c12]/80;
   }
 }

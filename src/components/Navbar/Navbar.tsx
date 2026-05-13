@@ -1,10 +1,5 @@
 "use client"
-import HamburgerSvg from '@/constants/svg/Hamburger.svg'
-import Image from 'next/image'
 import React from 'react'
-import BubbleMenu from '../BubbleMenu';
-import CardNav from '../CardNav';
-import logo from './logo-main.png';
 import StaggeredMenu from '../StaggeredMenu';
 
 // const items = [
@@ -80,6 +75,7 @@ import StaggeredMenu from '../StaggeredMenu';
 const menuItems = [
   { label: 'Home', ariaLabel: 'Go to home page', link: '/' },
   { label: 'About', ariaLabel: 'Learn about us', link: '/about' },
+  { label: 'Blog', ariaLabel: 'Read our blog', link: '/blog' },
   { label: 'Services', ariaLabel: 'View our services', link: '/services' },
   { label: 'Contact', ariaLabel: 'Get in touch', link: '/contact' }
 ];

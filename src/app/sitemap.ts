@@ -1,19 +1,28 @@
 import { SERVICES } from '@/constants/services';
+import { COMPANY } from '@/constants/company';
+import { getAllPosts } from '@/lib/blog';
 
 export default function sitemap() {
   const now = new Date();
+  const blogPosts = getAllPosts();
+
   return [
-    { url: 'https://codenexo.tech', lastModified: now },
-    { url: 'https://codenexo.tech/services', lastModified: now },
+    { url: COMPANY.website, lastModified: now },
+    { url: `${COMPANY.website}/services`, lastModified: now },
     ...SERVICES.map(s => ({
-      url: `https://codenexo.tech/services/${s.slug}`,
+      url: `${COMPANY.website}/services/${s.slug}`,
       lastModified: now,
     })),
     {
-      url: 'https://codenexo.tech/services/real-estate-leads-automation',
+      url: `${COMPANY.website}/services/real-estate-leads-automation`,
       lastModified: now,
     },
-    { url: 'https://codenexo.tech/about', lastModified: now },
-    { url: 'https://codenexo.tech/contact', lastModified: now },
+    { url: `${COMPANY.website}/about`, lastModified: now },
+    { url: `${COMPANY.website}/contact`, lastModified: now },
+    { url: `${COMPANY.website}/blog`, lastModified: now },
+    ...blogPosts.map((post) => ({
+      url: `${COMPANY.website}${post.url}`,
+      lastModified: new Date(post.updatedAt ?? post.date),
+    })),
   ];
 }

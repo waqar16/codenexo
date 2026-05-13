@@ -55,11 +55,11 @@ export default function Home() {
 
       {/* NEW Testimonials Section */}
       <TestimonialsSection />
-      <section className="py-10 sm:py-12 md:py-16">
+      {/* <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <TeamSection />
         </Container>
-      </section>
+      </section> */}
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <HomeContactUsSection />

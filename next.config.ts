@@ -1,25 +1,31 @@
+import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
+import { mdxOptions } from "./src/lib/mdx";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-   eslint: {
+  eslint: {
     ignoreDuringBuilds: true,
   },
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   async redirects() {
     return [
       {
-        source: '/:path*',
+        source: "/:path*",
         has: [
           {
-            type: 'host',
-            value: 'codenexo.tech',
+            type: "host",
+            value: "codenexo.tech",
           },
         ],
-        destination: 'https://codenexo.tech/:path*',
-        permanent: true, // 301 redirect
+        destination: "https://codenexo.tech/:path*",
+        permanent: true,
       },
     ];
   },
 };
 
-export default nextConfig;
+const withMDX = createMDX({
+  options: mdxOptions,
+});
+
+export default withMDX(nextConfig);
