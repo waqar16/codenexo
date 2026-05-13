@@ -3,8 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ArticleSchema from "@/components/Blog/ArticleSchema";
+import AuthorBox from "@/components/Blog/AuthorBox";
+import BlogCTA from "@/components/Blog/BlogCTA";
 import BlogLayout from "@/components/Blog/BlogLayout";
 import BlogSidebar from "@/components/Blog/BlogSidebar";
+import NewsletterSection from "@/components/Blog/NewsletterSection";
 import RelatedPosts from "@/components/Blog/RelatedPosts";
 import ShareButtons from "@/components/Blog/ShareButtons";
 import Container from "@/components/layout/Container";
@@ -142,75 +145,87 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   return (
     <BlogLayout>
-      <article className="bg-[#040b17] pb-16 pt-24 text-white md:pb-20">
+      <article className="bg-[#040b17] pb-16 pt-20 text-white md:pb-20 md:pt-24">
         <ArticleSchema data={articleSchema} />
         <ArticleSchema data={breadcrumbSchema} />
 
         <Container>
-          <header className="mx-auto max-w-4xl">
-            <Link
-              href="/blog"
-              className="inline-flex rounded-full border border-white/10 bg-white/[0.03] px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-[#f6c35b] transition hover:border-[#f39c12]/30"
-            >
-              Back to blog
-            </Link>
+          <header className="mx-auto max-w-4xl border-b border-white/10 pb-10">
+            <nav aria-label="Breadcrumb" className="flex flex-wrap items-center gap-2 text-sm text-gray-400">
+              <Link href="/" className="transition hover:text-white">
+                Home
+              </Link>
+              <span aria-hidden="true">/</span>
+              <Link href="/blog" className="transition hover:text-white">
+                Blog
+              </Link>
+              <span aria-hidden="true">/</span>
+              <span className="text-gray-300">{post.category}</span>
+            </nav>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.18em] text-gray-400">
-              <span>{post.category}</span>
+            <div className="mt-8 flex flex-wrap items-center gap-3 text-xs uppercase tracking-[0.14em] text-gray-400">
+              <Link
+                href={`/blog?category=${encodeURIComponent(post.category)}`}
+                className="rounded-full border border-[#f39c12]/25 bg-[#f39c12]/10 px-3 py-1 font-semibold text-[#f6c35b] transition hover:border-[#f39c12]/45"
+              >
+                {post.category}
+              </Link>
               <span className="h-1 w-1 rounded-full bg-[#f39c12]" />
               <span>{formatDate(post.date)}</span>
               <span className="h-1 w-1 rounded-full bg-[#f39c12]" />
               <span>{post.readingTime}</span>
+              {post.updatedAt ? (
+                <>
+                  <span className="h-1 w-1 rounded-full bg-[#f39c12]" />
+                  <span>Updated {formatDate(post.updatedAt)}</span>
+                </>
+              ) : null}
             </div>
 
-            <h1 className="mt-5 text-4xl font-extrabold leading-tight tracking-[-0.05em] text-white sm:text-5xl">
+            <h1 className="mt-6 text-4xl font-extrabold leading-tight text-white sm:text-5xl">
               {post.title}
             </h1>
             <p className="mt-5 max-w-3xl text-base leading-8 text-gray-300 sm:text-lg">{post.description}</p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3 text-sm text-gray-300">
-              <span className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2">{post.author}</span>
-              {post.updatedAt ? (
-                <span className="rounded-full border border-white/10 bg-white/[0.03] px-4 py-2">
-                  Updated {formatDate(post.updatedAt)}
-                </span>
-              ) : null}
+            <div className="mt-8 flex items-center gap-4 text-sm text-gray-300">
+              <div className="relative h-12 w-12 overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04]">
+                <Image src="/mubashir.jpg" alt="Mubashir Babar" fill sizes="48px" className="object-cover" />
+              </div>
+              <div>
+                <p className="font-semibold text-white">Mubashir Babar</p>
+                <p className="mt-1 text-gray-400">Founder, CodeNexo</p>
+              </div>
             </div>
           </header>
 
-          <div className="mx-auto mt-10 max-w-6xl">
-            <div className="relative overflow-hidden rounded-[2rem] border border-white/10">
+          <div className="mx-auto mt-10 max-w-5xl">
+            <div className="relative overflow-hidden rounded-3xl border border-white/10 shadow-[0_28px_90px_rgba(0,0,0,0.28)]">
               <Image
                 src={post.image}
                 alt={post.title}
                 width={1600}
                 height={900}
                 priority
-                className="aspect-[16/8] w-full object-cover"
-                sizes="(min-width: 1280px) 1152px, 100vw"
+                className="aspect-[16/9] w-full object-cover sm:aspect-[16/8]"
+                sizes="(min-width: 1280px) 1024px, 100vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#050c18]/70 to-transparent" />
             </div>
           </div>
 
-          <div className="mt-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_300px]">
-            <div className="min-w-0">
-              <div className="prose-codenexo">
+          <div className="mx-auto mt-12 grid max-w-6xl gap-10 lg:grid-cols-[minmax(0,768px)_260px] lg:justify-center">
+            <div className="min-w-0 max-w-3xl">
+              <div className="prose-codenexo prose prose-invert">
                 <MDXContent />
               </div>
+
+              <BlogCTA compact />
 
               <div className="mt-12">
                 <ShareButtons title={post.title} url={articleUrl} />
               </div>
 
-              <section className="mt-10 rounded-[1.75rem] border border-white/10 bg-white/[0.04] p-6 backdrop-blur-sm">
-                <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f6c35b]">About the author</p>
-                <h2 className="mt-3 text-2xl font-bold text-white">{post.author}</h2>
-                <p className="mt-3 max-w-2xl text-sm leading-7 text-gray-300 sm:text-base">
-                  The CodeNexo editorial team writes from hands-on experience delivering AI automation, web
-                  products, internal systems, and business workflow solutions for growth-focused teams.
-                </p>
-              </section>
+              <AuthorBox />
 
               <nav
                 aria-label="Article navigation"
@@ -238,6 +253,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </nav>
 
               <RelatedPosts posts={relatedPosts} />
+              <BlogCTA />
+              <NewsletterSection />
             </div>
 
             <div className="min-w-0">

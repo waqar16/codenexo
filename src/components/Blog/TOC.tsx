@@ -18,7 +18,7 @@ export default function TOC({ items }: TOCProps) {
   }
 
   return (
-    <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.04] p-5 backdrop-blur-sm">
+    <div className="rounded-2xl border border-white/10 bg-white/[0.025] p-4 backdrop-blur-sm">
       <button
         type="button"
         aria-expanded={open}
@@ -27,7 +27,7 @@ export default function TOC({ items }: TOCProps) {
         className="flex w-full items-center justify-between gap-4 text-left lg:pointer-events-none"
         onClick={() => setOpen((value) => !value)}
       >
-        <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#f6c35b]">
+        <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#f6c35b]">
           Table of contents
         </span>
         <ChevronDown
@@ -40,12 +40,12 @@ export default function TOC({ items }: TOCProps) {
         aria-label="Table of contents"
         className={`${open ? "mt-4 block" : "hidden"} lg:mt-4 lg:block`}
       >
-        <ul className="space-y-2">
+        <ul className="space-y-1">
           {items.map((item) => (
             <li key={item.id}>
               <a
                 href={`#${item.id}`}
-                className={`block rounded-xl px-3 py-2 text-sm leading-6 text-gray-300 transition hover:bg-white/5 hover:text-white ${
+                className={`block rounded-lg px-2.5 py-1.5 text-sm leading-6 text-gray-400 transition hover:bg-white/[0.04] hover:text-white ${
                   item.level === 3 ? "ml-4" : ""
                 }`}
               >

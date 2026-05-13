@@ -148,11 +148,11 @@ html.lenis {
 
 @layer components {
   .prose-codenexo {
-    @apply prose prose-lg max-w-none prose-headings:scroll-mt-28 prose-headings:font-bold prose-headings:tracking-[-0.03em] prose-p:text-gray-300 prose-p:leading-8 prose-li:text-gray-300 prose-li:leading-8 prose-a:font-medium prose-a:no-underline hover:prose-a:text-[#ffd277] prose-strong:text-white prose-code:rounded prose-code:bg-white/8 prose-code:px-1.5 prose-code:py-0.5 prose-code:font-medium prose-code:before:content-none prose-code:after:content-none prose-pre:overflow-x-auto prose-pre:rounded-3xl prose-pre:border prose-pre:border-white/10 prose-pre:bg-[#030a18] prose-pre:px-0 prose-pre:py-0 prose-blockquote:rounded-r-2xl prose-blockquote:border-l-4 prose-blockquote:border-[#f39c12]/50 prose-blockquote:bg-white/[0.03] prose-blockquote:px-6 prose-blockquote:py-2 prose-blockquote:not-italic prose-hr:border-white/10 prose-img:rounded-3xl prose-img:border prose-img:border-white/10 prose-figure:my-10 prose-table:block prose-table:w-full prose-table:overflow-x-auto;
+    @apply prose prose-invert prose-base sm:prose-lg max-w-3xl prose-headings:scroll-mt-28 prose-headings:font-bold prose-headings:tracking-normal prose-h2:mt-14 prose-h2:mb-5 prose-h2:text-3xl prose-h2:leading-tight prose-h3:mt-9 prose-h3:mb-3 prose-h3:text-2xl prose-h3:leading-snug prose-p:my-6 prose-p:text-[rgb(216,222,232)] prose-p:leading-8 prose-li:my-2 prose-li:text-[rgb(216,222,232)] prose-li:leading-8 prose-ul:my-6 prose-ol:my-6 prose-a:font-semibold prose-a:no-underline hover:prose-a:text-[#ffd277] prose-strong:text-white prose-code:rounded-md prose-code:bg-white/8 prose-code:px-1.5 prose-code:py-0.5 prose-code:text-[0.9em] prose-code:font-medium prose-code:before:content-none prose-code:after:content-none prose-pre:overflow-x-auto prose-pre:rounded-3xl prose-pre:border prose-pre:border-white/10 prose-pre:bg-[#030a18] prose-pre:px-0 prose-pre:py-0 prose-blockquote:my-8 prose-blockquote:rounded-r-2xl prose-blockquote:border-l-4 prose-blockquote:border-[#f39c12]/50 prose-blockquote:bg-white/[0.035] prose-blockquote:px-6 prose-blockquote:py-3 prose-blockquote:not-italic prose-hr:my-12 prose-hr:border-white/10 prose-img:rounded-3xl prose-img:border prose-img:border-white/10 prose-figure:my-10 prose-table:block prose-table:w-full prose-table:overflow-x-auto;
   }
 
   .prose-codenexo pre[data-theme] {
-    @apply my-8 overflow-x-auto rounded-3xl border border-white/10 bg-[#030a18] p-0;
+    @apply my-10 overflow-x-auto rounded-3xl border border-white/10 bg-[#030a18] p-0 shadow-[0_18px_60px_rgba(0,0,0,0.28)];
   }
 
   .prose-codenexo pre code {
@@ -161,7 +161,7 @@ html.lenis {
   }
 
   .prose-codenexo pre code [data-line] {
-    @apply border-l-2 border-transparent px-5 py-0.5;
+    @apply border-l-2 border-transparent px-5 py-0.5 leading-7;
   }
 
   .prose-codenexo pre code [data-highlighted-line] {

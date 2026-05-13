@@ -17,7 +17,7 @@ function formatDate(date: string) {
 
 export default function BlogCard({ post, priority = false }: BlogCardProps) {
   return (
-    <article className="group overflow-hidden rounded-[1.75rem] border border-white/10 bg-white/[0.04] shadow-[0_24px_70px_rgba(0,0,0,0.22)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20">
+    <article className="group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.035] shadow-[0_18px_60px_rgba(0,0,0,0.2)] backdrop-blur-sm transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/[0.05]">
       <Link href={post.url} className="block">
         <div className="relative aspect-[16/10] overflow-hidden">
           <Image
@@ -42,7 +42,7 @@ export default function BlogCard({ post, priority = false }: BlogCardProps) {
           <span>{post.readingTime}</span>
         </div>
 
-        <h3 className="mt-4 text-2xl font-bold tracking-[-0.03em] text-white">
+        <h3 className="mt-4 text-2xl font-bold tracking-normal text-white">
           <Link href={post.url} className="transition hover:text-[#f6c35b]">
             {post.title}
           </Link>
