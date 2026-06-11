@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { geistMono, geistSans } from "@/fonts/fonts";
 import { COMPANY } from "@/constants/company";
+import MobileCtaBar from "@/components/layout/MobileCtaBar";
 
 export const metadata: Metadata = {
   metadataBase: new URL(COMPANY.website),
@@ -47,10 +48,10 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PRC8MZ58');`,
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-PRC8MZ58');`,
           }}
         />
         <script
@@ -100,7 +101,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased pb-[60px] md:pb-0`}
       >
         <noscript>
           <iframe
@@ -112,6 +113,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
 
         {children}
+        <MobileCtaBar />
 
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-60Q27HKQQ4"
