@@ -1,4 +1,5 @@
 'use client'
+'use client'
 import React, { useState, FormEvent } from 'react'
 import { FaComments, FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 import { Input } from "@/components/ui/input";
@@ -6,16 +7,13 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 const ContactUsSection = () => {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
   const [query, setQuery] = useState('')
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle')
 
   const validate = () => {
-    if (!firstName.trim() || !email.trim() || !query.trim()) return false
+    if (!email.trim() || !query.trim()) return false
     return true
   }
 
@@ -26,11 +24,11 @@ const ContactUsSection = () => {
     setStatus('idle')
     try {
       const fd = new FormData()
-      fd.append('fullName', `${firstName} ${lastName}`.trim())
+      fd.append('fullName', 'Website Visitor')
       fd.append('email', email)
       fd.append('companyName', '')
-      fd.append('contactNo', phone)
-      fd.append('whatsApp', phone)
+      fd.append('contactNo', '')
+      fd.append('whatsApp', '')
       fd.append('location', '')
       fd.append('budget', '')
       fd.append('message', query)
@@ -38,7 +36,7 @@ const ContactUsSection = () => {
       const res = await fetch('/api/contact', { method: 'POST', body: fd })
       if (res.ok) {
         setStatus('success')
-        setFirstName(''); setLastName(''); setEmail(''); setPhone(''); setQuery('')
+        setEmail(''); setQuery('')
       } else {
         setStatus('error')
       }
@@ -53,7 +51,6 @@ const ContactUsSection = () => {
   return (
     <div className='p-6 md:p-12 grid gap-6 md:grid-cols-2 items-start'>
       <section className="w-full text-white">
-        {/* Heading */}
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
           have a<br />question?
         </h1>
@@ -116,28 +113,12 @@ const ContactUsSection = () => {
             <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 text-center text-sm">Failed to submit. Please retry.</div>
           )}
 
-          {/* First + Last Name (Row) */}
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="flex flex-col space-y-2">
-              <Label className="text-sm font-medium">First Name</Label>
-              <Input className="w-full" placeholder="John" value={firstName} onChange={e => setFirstName(e.target.value)} autoComplete="off" data-lpignore="true" />
-            </div>
-
-            <div className="flex flex-col space-y-2">
-              <Label className="text-sm font-medium">Last Name</Label>
-              <Input className="w-full" placeholder="Doe" value={lastName} onChange={e => setLastName(e.target.value)} autoComplete="off" data-lpignore="true" />
-            </div>
-          </div>
-
           {/* Email */}
           <div className="flex flex-col space-y-2">
             <Label className="text-sm font-medium">Email</Label>
-            <Input className="w-full" type="email" placeholder="" value={email} onChange={e => setEmail(e.target.value)} autoComplete="off" data-lpignore="true" />
+            <Input className="w-full" type="email" placeholder="you@example.com" value={email} onChange={e => setEmail(e.target.value)} autoComplete="off" data-lpignore="true" />
           </div>
-          <div className="flex flex-col space-y-2">
-            <Label>Phone / WhatsApp</Label>
-            <Input className="w-full" type="tel" placeholder="+92 322 626 4566" value={phone} onChange={e => setPhone(e.target.value)} autoComplete="off" data-lpignore="true" />
-          </div>
+
           {/* Query */}
           <div className="flex flex-col space-y-2">
             <Label className="text-sm font-medium">Your Query</Label>

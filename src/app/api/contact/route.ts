@@ -6,7 +6,7 @@ export async function POST(request: NextRequest) {
     const formData = await request.formData()
 
     // Extract all form fields (ensure empty string fallback)
-    const fullName = formData.get('fullName')?.toString() ?? ''
+    const fullName = formData.get('fullName')?.toString() || 'Website Visitor'
     const email = formData.get('email')?.toString() ?? ''
     const companyName = formData.get('companyName')?.toString() ?? ''
     const contactNo = formData.get('contactNo')?.toString() ?? ''
