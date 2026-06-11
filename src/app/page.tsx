@@ -6,6 +6,7 @@ import Landing from "@/components/Landing/Landing";
 import Navbar from "@/components/Navbar/Navbar";
 import ServicesSection from "@/components/ServicesSection/ServicesSection";
 import TeamSection from "@/components/TeamSection/TeamSection";
+import ChooseUsSection from "@/components/ChooseUsSection/ChooseUsSection";
 import { bitter } from "@/fonts/fonts";
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -60,6 +61,13 @@ export default function Home() {
           <TeamSection />
         </Container>
       </section> */}
+
+      <section className="py-10 sm:py-12 md:py-16">
+        <Container>
+          <ChooseUsSection />
+        </Container>
+      </section>
+
       <section className="py-10 sm:py-12 md:py-16">
         <Container>
           <HomeContactUsSection />
