@@ -153,25 +153,25 @@ const ServicePage = ({ params }: Props) => {
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Operations-heavy companies</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     Teams buried in repetitive tasks and fragmented workflows. We implement automation systems that replace manual handoffs with dependable execution paths.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Agencies managing multi-client delivery</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     Delivery breaks when fulfillment depends on tribal knowledge. We build workflow systems that standardize execution and improve throughput.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Startups building AI-driven products</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     Product teams need AI systems without fragile prototypes. We ship custom software that is designed for production from architecture to deployment.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Enterprises modernizing legacy processes</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     Legacy systems slow execution and visibility. We create API-led automation layers that scale across teams and business units.
                   </p>
                 </article>
@@ -180,7 +180,7 @@ const ServicePage = ({ params }: Props) => {
 
             <div>
               <h2 className="text-2xl font-bold">Problem and Solution</h2>
-              <div className="mt-4 grid grid-cols-1 gap-5 text-gray-700 lg:grid-cols-2">
+              <div className="mt-4 grid grid-cols-1 gap-5 text-gray-300 lg:grid-cols-2">
                 <div className="rounded-md bg-white/5 p-5">
                   <h3 className="text-xl font-semibold text-white">Problem</h3>
                   <p className="mt-2">Companies lose time and momentum because of:</p>
@@ -209,37 +209,37 @@ const ServicePage = ({ params }: Props) => {
               <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">AI Agent Development</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     We design LLM-based agents with prompt strategy, tool use, and guardrails for production reliability. Retrieval pipelines are implemented for grounded outputs across internal knowledge and external systems.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Business Process Automation</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     We deliver automation using Zapier, Make, and custom orchestration engines based on process complexity. Flows are versioned and observable so teams can improve operations without disruption.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Custom Internal Tools</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     We build role-aware internal platforms for approvals, reporting, and execution management. These systems remove spreadsheet dependence and centralize operational control.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Data Pipeline Automation</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     We automate ingestion, transformation, and synchronization across operational and analytics systems with validation, monitoring, and retry handling.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">API Integration and Orchestration</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     We implement API-first integrations that connect CRMs, ERPs, support tools, and proprietary systems. Orchestration logic is built for reliability under real-world load.
                   </p>
                 </article>
                 <article className="rounded-md bg-white/5 p-5">
                   <h3 className="font-semibold text-white">Monitoring and Observability</h3>
-                  <p className="mt-2 text-gray-700">
+                  <p className="mt-2 text-gray-300">
                     Every automation layer is instrumented with logs, alerts, and performance metrics tied to business outcomes, so teams can keep improving after launch.
                   </p>
                 </article>
@@ -273,7 +273,7 @@ const ServicePage = ({ params }: Props) => {
           <section className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="lg:col-span-2">
               <h2 className="text-2xl font-bold">Problem and Solution</h2>
-              <div className="mt-4 space-y-4 text-gray-700">
+              <div className="mt-4 space-y-4 text-gray-300">
                 <p>
                   <strong>Problem:</strong> {service.problem}
                 </p>
@@ -292,11 +292,11 @@ const ServicePage = ({ params }: Props) => {
               </ul>
 
               <h3 className="mt-8 text-xl font-semibold">Why CodeNexo?</h3>
-              <div className="mt-4 space-y-3 text-gray-700">
+              <div className="mt-4 space-y-3 text-gray-300">
                 <p>
                   We pair pragmatic engineering with product sensibilities. Our teams ship fast, keep systems maintainable, and design for long-term growth.
                 </p>
-                <ul className="list-disc pl-5 text-gray-700">
+                <ul className="list-disc pl-5 text-gray-300">
                   <li>Proven delivery across web, mobile, and embedded platforms.</li>
                   <li>Strong emphasis on security, observability, and testability.</li>
                   <li>Close collaboration and transparent roadmaps.</li>
